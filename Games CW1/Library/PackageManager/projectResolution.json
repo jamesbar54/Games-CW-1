@@ -28,13 +28,13 @@
       "source": "builtin",
       "testable": false
     },
-    "com.unity.inputsystem@1.14.2": {
+    "com.unity.inputsystem@1.18.0": {
       "name": "com.unity.inputsystem",
       "displayName": "Input System",
-      "resolvedPath": "C:\\Users\\james\\OneDrive\\Documents\\GitHub\\Games-CW-1\\Games CW1\\Library\\PackageCache\\com.unity.inputsystem@be6c4fd0abf5",
-      "fingerprint": "be6c4fd0abf5b9b45f956b97294032a67f3c2f4d",
-      "editorCompatibility": "2021.3.0a1",
-      "version": "1.14.2",
+      "resolvedPath": "C:\\Users\\james\\OneDrive\\Documents\\GitHub\\Games-CW-1\\Games CW1\\Library\\PackageCache\\com.unity.inputsystem@57d0e36f6123",
+      "fingerprint": "57d0e36f61231bc5a2579f37d81bf6fa02f40adc",
+      "editorCompatibility": "2022.3.0a1",
+      "version": "1.18.0",
       "source": "registry",
       "testable": false
     },

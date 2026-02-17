@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639063173255363257
-    m_Hash: 290767718
+      ticks: 639064073251725118
+    m_Hash: 140382804
   m_LockFileStatus:
     m_FilePath: C:/Users/james/OneDrive/Documents/GitHub/Games-CW-1/Games CW1/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639063173721429500
-    m_Hash: 2153327825
+      ticks: 639064073251861059
+    m_Hash: 1390083592
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -344,12 +344,12 @@ m_ResolvedPackages:
       scopePatternExpression: 
       message: 
       readMoreLink: 
-- packageId: com.unity.inputsystem@1.14.2
+- packageId: com.unity.inputsystem@1.18.0
   testable: 0
   isDirectDependency: 1
-  version: 1.14.2
+  version: 1.18.0
   source: 1
-  resolvedPath: C:\Users\james\OneDrive\Documents\GitHub\Games-CW-1\Games CW1\Library\PackageCache\com.unity.inputsystem@be6c4fd0abf5
+  resolvedPath: C:\Users\james\OneDrive\Documents\GitHub\Games-CW-1\Games CW1\Library\PackageCache\com.unity.inputsystem@57d0e36f6123
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -473,13 +473,13 @@ m_ResolvedPackages:
   entitlements:
     licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 638900632848680000
-  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.14/manual/index.html
+  datePublishedTicks: 639039807602510000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.inputsystem@1.18/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.com/Unity-Technologies/InputSystem.git
-    revision: 027f642a18cfac51abd465bf1e4b777316db0696
+    revision: c0d61169c3ccce912ce6a8dec13a30e6e35fdeb8
     path: 
   unityLifecycle:
     version: 1.14.2
@@ -493,17 +493,23 @@ m_ResolvedPackages:
   git:
     hash: 
     revision: 
-  upmReserved: '{"changelog":"### Fixed\n- Fixed an issue where using Pen devices
-    on Android tablets would result in double clicks for UI interactions. [ISXB-1456](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1456)\n-
-    Fixed an issue preventing an embedded platform from being released. It adds back
-    some `#defines` to `XRSupport` and `InputDeviceCharacteristics`."}'
+  upmReserved: '{"changelog":"### Changed\n\n- Updated documentation to reflect that
+    the OnMouse MonoBehaviour events are now supported in Unity 6.4 and above.\n-
+    Updated the supported devices documentation to clarify that touchscreens are
+    supported on Linux.\n- Updated documentation to reflect PS5 controller support
+    on Linux.\n\n### Fixed\n\n- Fixed add buttons use add icon in input actions window
+    (ISX-2340)\n- Fixed warnings being generated on Unity 6.4 and 6.5. (ISX-2395).\n-
+    Fixed extra empty lines being displayed in the control binding list when mouse
+    buttons are pressed [ISXB-1677](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1677)\n-
+    Fixed InputActionReference not being set when attempting to set it on a Prefab
+    or ScriptableObject [ISXB-1787](https://issuetracker.unity3d.com/product/unity/issues/guid/ISXB-1787)"}'
   assetStore:
     productId: 
-  fingerprint: be6c4fd0abf5b9b45f956b97294032a67f3c2f4d
+  fingerprint: 57d0e36f61231bc5a2579f37d81bf6fa02f40adc
   editorCompatibility:
     compatibilityLevel: 0
     minimumPackageVersion: 1.14.2
-    minimumUnityVersion: 2021.3.0a1
+    minimumUnityVersion: 2022.3.0a1
   compliance:
     status: 0
     violation:

@@ -9,6 +9,9 @@ public class AttackScript : MonoBehaviour
     [SerializeField]
     private bool attacking = false;
 
+    [SerializeField]
+    private float damage = 10.0f;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +26,19 @@ public class AttackScript : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        
+        Debug.Log("collide");
+
+        if(attacking == true)
+        {
+            GameObject gameObject = collision.gameObject;
+
+            HealthScript healthScript = gameObject.GetComponent<HealthScript>();
+
+            if (healthScript)
+            {
+                healthScript.takeDamage(damage);
+            }
+        }
     }
 
     public void activateAttack()

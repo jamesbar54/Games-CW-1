@@ -414,6 +414,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/Scripts/AttackScript.cs"
 "Assets/Scripts/CameraMovement.cs"
+"Assets/Scripts/HealthScript.cs"
 "Assets/Scripts/PlayerActions.cs"
 "Assets/Scripts/PlayerMovement.cs"
 -langversion:9.0

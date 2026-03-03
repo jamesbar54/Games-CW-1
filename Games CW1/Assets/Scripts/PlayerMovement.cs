@@ -156,8 +156,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (activeState <= 0 && animator.GetBool("Grounded") == true)
         {
-            Debug.Log("Attack");
-
             AttackScript attackScript = attack.GetComponent<AttackScript>();
             attackScript.activateAttack();
 

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Scripting.APIUpdating;
@@ -13,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private CharacterController characterController;
     private float HorizontalMouseInput;
+    [SerializeField]
+    private GameObject attack;
 
 
     #region INPUT
@@ -36,12 +39,21 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float groundedValue = 1.0f;
 
+    //Jump values
     [SerializeField]
     private float jumpHeight = 0.2f;
     [SerializeField]
     private float groundedStore = 0;
     [SerializeField]
     private float groundedDecrease = 5.0f;
+
+    //Attack Values
+    [SerializeField]
+    private float activeState = 0; 
+    [SerializeField]
+    private float activeTime = 1.3f; 
+    private bool attackPerforming = false;
+
 
     public void Gravity()
     {
@@ -60,11 +72,12 @@ public class PlayerMovement : MonoBehaviour
         actions.Controls.Movement.performed += cxt => moveInput = cxt.ReadValue<Vector2>();
         actions.Controls.Jump.performed += cxt => PerformJump();
         actions.Controls.Mouse.performed += cxt => HorizontalMouseInput = cxt.ReadValue<float>();
+        actions.Controls.Attack.performed += cxt => PerformAttack();
     }
 
     void Start()
     {
-        
+        Application.targetFrameRate = 120;
     }
 
     private void running()
@@ -101,6 +114,29 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("Jump", false);
             animator.SetBool("Grounded", true);
         }
+
+        if (groundedStore < 0.8f)
+        {
+            animator.SetBool("Grounded", false);
+        }
+
+
+        if(activeState > 0)
+        {
+            activeState -= 1 * Time.deltaTime;
+
+            if (activeState < 0.5)
+            {
+                animator.SetBool("Attacking", false);
+            }
+        }
+        else if(attackPerforming == true)
+        {
+            AttackScript attackScript = attack.GetComponent<AttackScript>();
+            attackScript.endAttack();
+
+            attackPerforming = false;
+        }
     }
 
     private void PerformJump()
@@ -116,21 +152,39 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void PerformAttack()
+    {
+        if (activeState <= 0 && animator.GetBool("Grounded") == true)
+        {
+            Debug.Log("Attack");
+
+            AttackScript attackScript = attack.GetComponent<AttackScript>();
+            attackScript.activateAttack();
+
+            activeState = activeTime;
+            
+            animator.SetBool("Attacking", true);
+
+            attackPerforming = true;
+        }
+
+    }
+
     private void Move()
     {
-        Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
-        characterController.Move(moveSpeed * Time.deltaTime * move);
+        if(activeState <= 0.3f){
+            Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
+            characterController.Move(moveSpeed * Time.deltaTime * move);
 
-        Debug.Log(moveInput.x);
-        Debug.Log(moveInput.y);
 
-        if(moveInput.x == 0 && moveInput.y == 0)
-        {
-            standing();
-        }
-        else
-        {
-            running();
+            if(moveInput.x == 0 && moveInput.y == 0)
+            {
+                standing();
+            }
+            else
+            {
+                running();
+            }
         }
     }
 

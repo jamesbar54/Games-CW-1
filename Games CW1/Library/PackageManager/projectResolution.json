@@ -9,6 +9,16 @@
     "C:\\Program Files\\Unity\\Hub\\Editor\\6000.2.12f1\\Editor\\Data\\Resources\\PackageManager\\BuiltInPackages\\BuiltInPackagesCombined.sha1"
   ],
   "outputs": {
+    "com.unity.ai.navigation@2.0.11": {
+      "name": "com.unity.ai.navigation",
+      "displayName": "AI Navigation",
+      "resolvedPath": "C:\\Users\\james\\OneDrive\\Documents\\GitHub\\Games-CW-1\\Games CW1\\Library\\PackageCache\\com.unity.ai.navigation@78534c21b27d",
+      "fingerprint": "78534c21b27d2c95f8220f5db8dce95627a32911",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "2.0.11",
+      "source": "registry",
+      "testable": false
+    },
     "com.unity.collab-proxy@2.10.1": {
       "name": "com.unity.collab-proxy",
       "displayName": "Unity Version Control",

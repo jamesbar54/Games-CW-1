@@ -27,6 +27,11 @@ public class HealthScript : MonoBehaviour
         }
     }
 
+    public float getHealth()
+    {
+        return health / 100;
+    }
+
     // Update is called once per frame
     void Update()
     {

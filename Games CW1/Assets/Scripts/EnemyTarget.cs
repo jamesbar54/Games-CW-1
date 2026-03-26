@@ -17,6 +17,9 @@ public class EnemyTarget : MonoBehaviour
     public float dist2 = 15.0f;
     public float speed = 10.0f;
 
+    private float damageTimer = 0;
+    public float setTime = 5;
+
     void Awake()
     {
         agent.speed = speed;
@@ -27,17 +30,36 @@ public class EnemyTarget : MonoBehaviour
     //Update is called once per frame
     void Update()
     {
-        if((target.transform.position - transform.position).sqrMagnitude > dist2)
+        Vector3 tar = target.transform.position;
+
+        if((tar - transform.position).sqrMagnitude > dist2)
         {
             agent.SetDestination(transform.position);
         }
-        else if((target.transform.position - transform.position).sqrMagnitude > dist)
+        else if((tar - transform.position).sqrMagnitude > dist)
         {
-            agent.SetDestination(target.transform.position);
+            agent.SetDestination(tar);
         }
         else
         {
             agent.SetDestination(transform.position);
+            attack();
+        }
+    }
+
+    private void attack()
+    {
+        Debug.Log("Attack");
+
+        if(damageTimer + setTime < Time.time)
+        {    
+            Debug.Log("Hit");
+
+            PlayerHealth health = target.GetComponent<PlayerHealth>();
+
+            health.takeDamage(5);
+
+            damageTimer = Time.time;
         }
     }
 }

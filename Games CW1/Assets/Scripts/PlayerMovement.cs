@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        Application.targetFrameRate = 120;
+        //Application.targetFrameRate = 120;
     }
 
     private void running()

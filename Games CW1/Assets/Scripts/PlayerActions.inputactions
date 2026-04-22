@@ -10,7 +10,7 @@
                     "name": "Movement",
                     "type": "PassThrough",
                     "id": "4413d3f1-bdc2-49e9-900c-0214e9351a36",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -37,6 +37,15 @@
                     "name": "Attack",
                     "type": "Button",
                     "id": "f4d3774b-580b-41ed-936d-9ce33caf16a0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "0b4ca908-8055-4402-9338-06699bc6ee3e",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -129,6 +138,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bc64982b-c166-4f10-b517-bb41e54b393d",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

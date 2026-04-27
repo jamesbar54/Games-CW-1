@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "MenuAction",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "1d6f1b5b-ea75-4c66-b8dd-cf9f12b8b448",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "bcb7e24e-4c22-4a84-b6ca-ac4d140a0c1e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "aa122fbe-bf27-4ebd-ad0a-7f81d07c63fd",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

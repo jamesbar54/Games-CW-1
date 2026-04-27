@@ -73,6 +73,12 @@ public class PlayerMovement : MonoBehaviour
         actions.Controls.Jump.performed += cxt => PerformJump();
         actions.Controls.Mouse.performed += cxt => HorizontalMouseInput = cxt.ReadValue<float>();
         actions.Controls.Attack.performed += cxt => PerformAttack();
+        //actions.Menu.MenuKey.performed += cxt => openMenu();
+    }
+
+     private void openMenu()
+    {
+        Debug.Log("Pause");
     }
 
     void Start()

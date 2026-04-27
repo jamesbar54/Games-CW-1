@@ -144,11 +144,39 @@
                 {
                     "name": "",
                     "id": "bc64982b-c166-4f10-b517-bb41e54b393d",
-                    "path": "<Keyboard>/escape",
+                    "path": "<Keyboard>/1",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Menu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Menu",
+            "id": "2f35727e-6f5f-478a-bfbb-cac5511a7789",
+            "actions": [
+                {
+                    "name": "MenuKey",
+                    "type": "Button",
+                    "id": "5311142e-687a-41cb-9de8-d2fb46ce58fc",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b02b6517-bf32-4d98-bf5a-b5fb1fd5ac82",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuKey",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -422,6 +422,7 @@
 "Assets/Scripts/EnemyTarget.cs"
 "Assets/Scripts/HealthBar.cs"
 "Assets/Scripts/HealthScript.cs"
+"Assets/Scripts/MenuAction.cs"
 "Assets/Scripts/PauseMenuScript.cs"
 "Assets/Scripts/PlayerActions.cs"
 "Assets/Scripts/PlayerHealth.cs"

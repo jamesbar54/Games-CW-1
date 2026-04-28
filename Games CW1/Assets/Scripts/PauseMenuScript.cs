@@ -1,8 +1,4 @@
-using JetBrains.Annotations;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.Scripting.APIUpdating;
 using UnityEngine.UI;
 
 public class PauseMenuScript : MonoBehaviour
@@ -14,6 +10,7 @@ public class PauseMenuScript : MonoBehaviour
     public Button Resume;
     public Button Settings;
     public Button QuitButton;
+    public Button ERR;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,27 +26,47 @@ public class PauseMenuScript : MonoBehaviour
 
         Resume.onClick.AddListener(toggleMenu);
         QuitButton.onClick.AddListener(exitGame);
+
+        resetButtons();
+    }
+
+    private void resetButtons()
+    {
+        ERR.Select();
     }
 
     private void openMenu()
     {
-        toggleMenu();
+        if(Time.timeScale == 1){
+            toggleMenu();
+        }
     }
 
     private void exitGame()
     {
         Debug.Log("gameEnd");
+
+        resetButtons();
+
         Application.Quit();
     }
 
     private void toggleMenu()
     {
-        bool enableMenu = false;
+        bool enableMenu;
 
         if(menu.GetComponent<Image>().enabled == false)
         {
             enableMenu = true;
+
+            Time.timeScale = 0;
         }
+        else
+        {
+            enableMenu = false;
+
+            Time.timeScale = 1;
+        }     
 
         menu.GetComponent<Image>().enabled = enableMenu;
 
@@ -59,6 +76,8 @@ public class PauseMenuScript : MonoBehaviour
             menu.transform.GetChild(i).GetComponent<Text>().enabled = enableMenu;
         }
         
+
+        resetButtons();
     }
 
     private void OnEnable()
@@ -74,6 +93,6 @@ public class PauseMenuScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        resetButtons();        
     }
 }

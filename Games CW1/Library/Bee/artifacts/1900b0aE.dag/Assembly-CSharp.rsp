@@ -419,6 +419,7 @@
 "Assets/Scripts/AttackScript.cs"
 "Assets/Scripts/CameraMovement.cs"
 "Assets/Scripts/DamgeOverlayScript.cs"
+"Assets/Scripts/DeathMenuScript.cs"
 "Assets/Scripts/EnemyTarget.cs"
 "Assets/Scripts/HealthBar.cs"
 "Assets/Scripts/HealthScript.cs"

@@ -1,6 +1,5 @@
-using Microsoft.Unity.VisualStudio.Editor;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DamgeOverlayScript : MonoBehaviour
 {
@@ -10,6 +9,11 @@ public class DamgeOverlayScript : MonoBehaviour
     void Start()
     {
         img.SetAlpha(0.0f);
+    }
+
+    void Awake()
+    {
+        img.GetComponentInParent<Image>().enabled = true;
     }
 
     // Update is called once per frame

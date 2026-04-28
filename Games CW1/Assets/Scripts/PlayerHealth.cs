@@ -1,10 +1,9 @@
-using NUnit.Framework.Internal;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public GameObject DeathMenu; 
+
     public GameObject damageOverlay;
 
     [SerializeField]
@@ -26,6 +25,11 @@ public class PlayerHealth : MonoBehaviour
             health -= damage;
 
             iFrames = 0.5f;
+
+            if(health <= 0)
+            {
+                kill();
+            }
         }
 
         if(damageOverlay != null)
@@ -34,6 +38,15 @@ public class PlayerHealth : MonoBehaviour
 
             dOverlay.onDamage();
         }
+    }
+
+    private void kill()
+    {
+        DeathMenuScript menu = DeathMenu.GetComponent<DeathMenuScript>();
+
+        menu.onDeath();
+
+        Time.timeScale = 0;
     }
 
     public float getHealth()

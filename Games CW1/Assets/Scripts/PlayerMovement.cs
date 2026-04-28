@@ -1,12 +1,19 @@
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.Scripting.APIUpdating;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement/ control")]
+
+    #region VALUE
+    [SerializeField]
+    private float moveSpeed = 2.0f;
+    [SerializeField]
+    private float rotationSpeed = 80.0f;
+    #endregion
+
+    #region INPUT
+    private Vector2 moveInput;
+    #endregion
 
     private PlayerActions actions;
     [SerializeField]
@@ -18,26 +25,17 @@ public class PlayerMovement : MonoBehaviour
     private GameObject attack;
 
 
-    #region INPUT
-    private Vector2 moveInput;
-    #endregion
-
-
-    #region VALUE
-    [SerializeField]
-    private float moveSpeed = 2.0f;
-    [SerializeField]
-    private float rotationSpeed = 80.0f;
-    #endregion
-
     
 
-    private Vector3 playerVelocity;
+    [Header("Physics")]
+    
+    
     [SerializeField]
     private float gravityValue = -9.81f;
 
     [SerializeField]
     private float groundedValue = 1.0f;
+    private Vector3 playerVelocity;
 
     //Jump values
     [SerializeField]
@@ -108,46 +106,48 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        Move();
-        Gravity();
-        Rotate();
+        if(Time.timeScale == 1){
+            Move();
+            Gravity();
+            Rotate();
 
-        groundedStore -= groundedDecrease * Time.deltaTime;
+            groundedStore -= groundedDecrease * Time.deltaTime;
 
-        if (characterController.isGrounded)
-        {
-            groundedStore = groundedValue;
-            animator.SetBool("Jump", false);
-            animator.SetBool("Grounded", true);
-        }
-
-        if (groundedStore < 0.8f)
-        {
-            animator.SetBool("Grounded", false);
-        }
-
-
-        if(activeState > 0)
-        {
-            activeState -= 1 * Time.deltaTime;
-
-            if (activeState < 0.5)
+            if (characterController.isGrounded)
             {
-                animator.SetBool("Attacking", false);
+                groundedStore = groundedValue;
+                animator.SetBool("Jump", false);
+                animator.SetBool("Grounded", true);
             }
-        }
-        else if(attackPerforming == true)
-        {
-            AttackScript attackScript = attack.GetComponent<AttackScript>();
-            attackScript.endAttack();
 
-            attackPerforming = false;
+            if (groundedStore < 0.8f)
+            {
+                animator.SetBool("Grounded", false);
+            }
+
+
+            if(activeState > 0)
+            {
+                activeState -= 1 * Time.deltaTime;
+
+                if (activeState < 0.5)
+                {
+                    animator.SetBool("Attacking", false);
+                }
+            }
+            else if(attackPerforming == true)
+            {
+                AttackScript attackScript = attack.GetComponent<AttackScript>();
+                attackScript.endAttack();
+
+                attackPerforming = false;
+            }
         }
     }
 
     private void PerformJump()
     {
-        if (groundedStore > 0)
+        if (groundedStore > 0 && Time.timeScale == 1)
         {
             //Vector3 move = characterController.velocity + transform.up * jumpHeight;
             playerVelocity.y = jumpHeight * -3.0f * gravityValue;
@@ -160,7 +160,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void PerformAttack()
     {
-        if (activeState <= 0 && animator.GetBool("Grounded") == true)
+        if (activeState <= 0 && animator.GetBool("Grounded") == true && Time.timeScale == 1)
         {
             AttackScript attackScript = attack.GetComponent<AttackScript>();
             attackScript.activateAttack();

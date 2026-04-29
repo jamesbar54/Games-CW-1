@@ -23,8 +23,6 @@ public class PlayerMovement : MonoBehaviour
     private float HorizontalMouseInput;
     [SerializeField]
     private GameObject attack;
-
-
     
 
     [Header("Physics")]

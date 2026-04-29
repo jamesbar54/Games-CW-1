@@ -26,7 +26,7 @@ public class AttackScript : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collide");
+        Debug.Log("Player Collide: " + collision.gameObject);
 
         if(attacking == true)
         {

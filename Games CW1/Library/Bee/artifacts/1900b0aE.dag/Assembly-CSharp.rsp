@@ -416,6 +416,8 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/SazenGames/Skeleton/Scripts/AnimationReplayer.cs"
+"Assets/SazenGames/Skeleton/Scripts/SimpleCameraController.cs"
 "Assets/Scripts/AttackScript.cs"
 "Assets/Scripts/CameraMovement.cs"
 "Assets/Scripts/DamgeOverlayScript.cs"

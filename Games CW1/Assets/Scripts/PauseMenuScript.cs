@@ -37,9 +37,7 @@ public class PauseMenuScript : MonoBehaviour
 
     private void openMenu()
     {
-        if(Time.timeScale == 1){
-            toggleMenu();
-        }
+        toggleMenu();    
     }
 
     private void exitGame()
@@ -77,7 +75,7 @@ public class PauseMenuScript : MonoBehaviour
         }
         
 
-        resetButtons();
+        //resetButtons();
     }
 
     private void OnEnable()

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 1114
     height: 575
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 226}
+  m_MaxSize: {x: 4002, y: 4026}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -416,7 +416,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/PreFabs
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -426,16 +426,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/PreFabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\james\OneDrive\Documents\GitHub\Games-CW-1\Games CW1
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 46af0100
-    m_LastClickedID: 110406
-    m_ExpandedIDs: 00000000fe8e0000008f0000068f0000088f000000ca9a3b
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: c08f0000
+    m_LastClickedID: 36800
+    m_ExpandedIDs: 00000000168f0000188f00001a8f00001c8f0000bc8f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -464,7 +464,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fe8e0000008f0000028f0000048f0000068f0000088f0000
+    m_ExpandedIDs: 00000000168f0000188f00001a8f00001c8f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -609,24 +609,24 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 480}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 588afeffb48afeff0c8bfefff4bafeff70f5ffff74f5ffff78f5ffff7cf5ffff80f5ffffa8f5ffffacf5ffffb0f5ffffb4f5ffffe0f5ffff1af9ffff1ef9ffff26f9ffff2ef9ffff32f9ffffb6f9ffffc2f9ffffc6f9ffffcaf9ffffcef9ffffd2f9ffffe6f9ffff18fbffff1afbffff92850000b2850000188600002a860000708600007a860000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: ac850000
+      m_LastClickedID: 34220
+      m_ExpandedIDs: d43affff1afbffff8c8500002686000078860000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Hallway1
+        m_OriginalName: Hallway1
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -2204
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 4}
@@ -1216,9 +1216,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -43.64992, y: 1.1523112, z: 27.178648}
+    m_Target: {x: -17.280008, y: 3.0879426, z: 25.372358}
     speed: 2
-    m_Value: {x: -43.64992, y: 1.1523112, z: 27.178648}
+    m_Value: {x: -17.280008, y: 3.0879426, z: 25.372358}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1264,13 +1264,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.039284516, y: -0.9563657, z: 0.1527664, w: -0.24593574}
+    m_Target: {x: -0.099445105, y: 0.5465344, z: -0.0655669, w: -0.8289229}
     speed: 2
-    m_Value: {x: -0.039284505, y: -0.95636547, z: 0.15276638, w: -0.24593568}
+    m_Value: {x: -0.1006883, y: 0.54643506, z: -0.06638658, w: -0.82877225}
   m_Size:
-    m_Target: 2.3520577
+    m_Target: 4.2789145
     speed: 2
-    m_Value: 2.3520577
+    m_Value: 4.2789145
   m_Ortho:
     m_Target: 0
     speed: 2

@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using NUnit.Framework.Internal;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,6 +11,9 @@ public class HealthScript : MonoBehaviour
 
     [SerializeField]
     private float iFrames = 0;
+
+    public float deathDelay = 10;
+    private float deathTime = float.PositiveInfinity;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,6 +39,8 @@ public class HealthScript : MonoBehaviour
     private void death()
     {
         gameObject.GetComponent<EnemyTarget>().killed();
+
+        deathTime = Time.time + deathDelay;
     }
 
     public float getHealth()
@@ -48,6 +54,13 @@ public class HealthScript : MonoBehaviour
         if(iFrames > 0)
         {
             iFrames -= 1 * Time.deltaTime;
+        }
+
+        if (deathTime < Time.time)
+        {
+            //Destroy(gameObject);
+
+            gameObject.GetComponentInParent<SceneChangeScript>().checker(gameObject);
         }
     }
 }

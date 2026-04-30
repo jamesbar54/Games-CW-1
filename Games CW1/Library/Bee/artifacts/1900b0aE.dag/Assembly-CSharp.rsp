@@ -430,6 +430,7 @@
 "Assets/Scripts/PlayerActions.cs"
 "Assets/Scripts/PlayerHealth.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/SceneChangeScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+

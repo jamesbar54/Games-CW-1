@@ -6,7 +6,7 @@ public class DeathMenuScript : MonoBehaviour
 {
     public GameObject menu;
 
-    public Image EndScreen;
+    public GameObject EndScreen;
 
     public Button Retry;
     public Button GiveUp;
@@ -23,7 +23,7 @@ public class DeathMenuScript : MonoBehaviour
 
     public void onDeath()
     {
-        //EndScreen.GetComponent<Image>.enabled = true;
+        EndScreen.GetComponent<Image>().enabled = true;
         
         Retry.GetComponent<Text>().enabled = true;
         GiveUp.GetComponent<Text>().enabled = true;

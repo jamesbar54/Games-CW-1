@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework.Internal;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -13,6 +14,13 @@ public class AttackScript : MonoBehaviour
     private float damage = 10.0f;
 
 
+
+
+    //attack delay timer
+    private float attackDelay = 0;
+    private bool attackBool = false;
+    public float attackDelayValue  = 0.02f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,34 +34,50 @@ public class AttackScript : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Player Collide: " + collision.gameObject);
-
-        if(attacking == true)
+        if(Time.time > attackDelay && attackBool)
         {
-            GameObject gameObject = collision.gameObject;
+            //Debug.Log("active");
 
-            HealthScript healthScript = gameObject.GetComponent<HealthScript>();
+            Debug.Log("Player Collide: " + collision.gameObject);
 
-            if (healthScript)
+            if(attacking == true)
             {
-                healthScript.takeDamage(damage);
+                GameObject gameObject = collision.gameObject;
+
+                HealthScript healthScript = gameObject.GetComponent<HealthScript>();
+
+                if (healthScript)
+                {
+                    healthScript.takeDamage(damage);
+                }
             }
         }
     }
 
     public void activateAttack()
     {
+        
+        attackDelay = Time.time + attackDelayValue;
+
+        attackBool = true;
+
         attacking = true;
     }
 
     public void endAttack()
     {
         attacking = false;
+        attackBool = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // Debug.Log(attackBool);
+        // Debug.LogFormat("{0} : {1}",attackDelay, Time.time);
+        // if(Time.time > attackDelay && attackBool)
+        // {
+        //     Debug.Log("active");
+        // }
     }
 }

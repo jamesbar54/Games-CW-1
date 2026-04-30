@@ -1,7 +1,5 @@
-using System.Threading;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UIElements;
 
 public class EnemyTarget : MonoBehaviour
 {
@@ -14,8 +12,6 @@ public class EnemyTarget : MonoBehaviour
 
     public Animator animator;
 
-    public GameObject weapon;
-
     [Header("Variables")]
     public float dist = 3.0f;
     public float dist2 = 15.0f;
@@ -24,6 +20,8 @@ public class EnemyTarget : MonoBehaviour
     private bool attacking = false;
     private float damageTimer = 0;
     public float setTime = 0.88f;
+
+    private bool dead = false;
 
     void Awake()
     {
@@ -36,32 +34,58 @@ public class EnemyTarget : MonoBehaviour
     void Update()
     {
 
-        Vector3 tar = target.transform.position;
-
-        if((tar - transform.position).sqrMagnitude > dist2)
+        if (!dead)
         {
-            agent.SetDestination(transform.position);
-            idle();
-            
-            attacking = false;
-        }
-        else if((tar - transform.position).sqrMagnitude > dist)
-        {
-            agent.SetDestination(tar);
-            running();
+            Vector3 tar = target.transform.position;
 
-            attacking = false;
+            if((tar - transform.position).sqrMagnitude > dist2)
+            {
+                agent.SetDestination(transform.position);
+                idle();
+                
+                attacking = false;
+            }
+            else if((tar - transform.position).sqrMagnitude > dist)
+            {
+                agent.SetDestination(tar);
+                running();
+
+                attacking = false;
+            }
+            else
+            {
+                if (!attacking)
+                {
+                    damageTimer = Time.time - 0.3f;
+                    Debug.Log(damageTimer);
+                }
+                agent.SetDestination(transform.position);
+                attack();
+            }
         }
         else
         {
-            if (!attacking)
-            {
-                damageTimer = Time.time - 0.3f;
-                Debug.Log(damageTimer);
-            }
-            agent.SetDestination(transform.position);
-            attack();
+            death();
         }
+
+    }
+
+    private void death()
+    {
+        Debug.Log("dead");
+
+        animator.SetBool("Dead", true);
+        animator.SetBool("Attacking", false);
+
+    
+    }
+
+
+    public void killed()
+    {
+        Debug.Log("killed");
+
+        dead = true;
     }
 
     private void idle()

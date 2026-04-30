@@ -24,7 +24,17 @@ public class HealthScript : MonoBehaviour
             health -= damage;
 
             iFrames = 0.5f;
+
+            if(health <= 0)
+            {
+                death();
+            }
         }
+    }
+
+    private void death()
+    {
+        gameObject.GetComponent<EnemyTarget>().killed();
     }
 
     public float getHealth()

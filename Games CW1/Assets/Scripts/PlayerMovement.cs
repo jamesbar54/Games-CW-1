@@ -1,3 +1,4 @@
+using System.Threading;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -49,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float activeTime = 1.3f; 
     private bool attackPerforming = false;
+
 
 
     public void Gravity()
@@ -141,6 +143,8 @@ public class PlayerMovement : MonoBehaviour
                 attackPerforming = false;
             }
         }
+
+        
     }
 
     private void PerformJump()
@@ -159,17 +163,16 @@ public class PlayerMovement : MonoBehaviour
     private void PerformAttack()
     {
         if (activeState <= 0 && animator.GetBool("Grounded") == true && Time.timeScale == 1)
-        {
-            AttackScript attackScript = attack.GetComponent<AttackScript>();
-            attackScript.activateAttack();
+            {
+                AttackScript attackScript = attack.GetComponent<AttackScript>();
+                attackScript.activateAttack();
 
-            activeState = activeTime;
-            
-            animator.SetBool("Attacking", true);
+                activeState = activeTime;
+                
+                animator.SetBool("Attacking", true);
 
-            attackPerforming = true;
-        }
-
+                attackPerforming = true;
+            }
     }
 
     private void Move()

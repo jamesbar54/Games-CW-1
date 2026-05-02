@@ -1,8 +1,4 @@
-using System;
-using NUnit.Framework.Internal;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class AttackScript : MonoBehaviour
 {
@@ -13,11 +9,6 @@ public class AttackScript : MonoBehaviour
     [SerializeField]
     private float damage = 10.0f;
 
-
-
-
-    //attack delay timer
-    private float attackDelay = 0;
     private bool attackBool = false;
     public float attackDelayValue  = 0.02f;
 
@@ -34,31 +25,26 @@ public class AttackScript : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if(Time.time > attackDelay && attackBool)
-        {
-            //Debug.Log("active");
+        //Debug.Log("active");
 
-            Debug.Log("Player Collide: " + collision.gameObject);
+        Debug.Log("Player Collide: " + collision.gameObject);
 
-            if(attacking == true)
+        //if(attacking == true)
+        //{
+            GameObject gameObject = collision.gameObject;
+
+            HealthScript healthScript = gameObject.GetComponent<HealthScript>();
+
+            if (healthScript)
             {
-                GameObject gameObject = collision.gameObject;
-
-                HealthScript healthScript = gameObject.GetComponent<HealthScript>();
-
-                if (healthScript)
-                {
-                    healthScript.takeDamage(damage);
-                }
+                healthScript.takeDamage(damage);
             }
-        }
+        //}
     }
+
 
     public void activateAttack()
     {
-        
-        attackDelay = Time.time + attackDelayValue;
-
         attackBool = true;
 
         attacking = true;
@@ -66,8 +52,9 @@ public class AttackScript : MonoBehaviour
 
     public void endAttack()
     {
-        attacking = false;
-        attackBool = false;
+        Debug.Log("end");
+
+        Destroy(gameObject);
     }
 
     // Update is called once per frame

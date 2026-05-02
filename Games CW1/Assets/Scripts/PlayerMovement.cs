@@ -1,4 +1,5 @@
 using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -22,8 +23,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private CharacterController characterController;
     private float HorizontalMouseInput;
+
+
     [SerializeField]
     private GameObject attack;
+
+    [SerializeField]
+    private GameObject weapon;
+
+    [SerializeField]
+    private GameObject attackPrefab;
     
 
     [Header("Physics")]
@@ -51,6 +60,10 @@ public class PlayerMovement : MonoBehaviour
     private float activeTime = 1.3f; 
     private bool attackPerforming = false;
 
+    public bool defending = false;
+
+    private float defendRotate = 30f;
+
 
 
     public void Gravity()
@@ -71,12 +84,9 @@ public class PlayerMovement : MonoBehaviour
         actions.Controls.Jump.performed += cxt => PerformJump();
         actions.Controls.Mouse.performed += cxt => HorizontalMouseInput = cxt.ReadValue<float>();
         actions.Controls.Attack.performed += cxt => PerformAttack();
-        //actions.Menu.MenuKey.performed += cxt => openMenu();
-    }
-
-     private void openMenu()
-    {
-        Debug.Log("Pause");
+        actions.Controls.Defend.started += cxt => StartDefending();
+        actions.Controls.Defend.canceled += cxt => StopDefending();
+        
     }
 
     void Start()
@@ -84,32 +94,20 @@ public class PlayerMovement : MonoBehaviour
         //Application.targetFrameRate = 120;
     }
 
-    private void running()
-    {
-        animator.SetBool("Running", true);
-    }
-
-    private void standing()
-    {
-        animator.SetBool("Running", false);
-    }
-
-    private void OnEnable()
-    {
-        actions.Enable();
-    }
-
-    private void OnDisable()
-    {
-        actions.Disable();
-    }
 
     void Update()
     {
         if(Time.timeScale == 1){
-            Move();
+            if (defending)
+            {
+                Defend();
+            }else
+            {
+                Move();
+                Rotate();
+            }
+
             Gravity();
-            Rotate();
 
             groundedStore -= groundedDecrease * Time.deltaTime;
 
@@ -128,6 +126,11 @@ public class PlayerMovement : MonoBehaviour
 
             if(activeState > 0)
             {
+                if(activeState < 0.8 && attack.IsUnityNull())
+                {
+                    attack = Instantiate(attackPrefab, transform);
+                }
+
                 activeState -= 1 * Time.deltaTime;
 
                 if (activeState < 0.5)
@@ -151,6 +154,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (groundedStore > 0 && Time.timeScale == 1)
         {
+            defending = false;
+
             //Vector3 move = characterController.velocity + transform.up * jumpHeight;
             playerVelocity.y = jumpHeight * -3.0f * gravityValue;
             groundedStore = 0;
@@ -162,23 +167,56 @@ public class PlayerMovement : MonoBehaviour
 
     private void PerformAttack()
     {
+        Debug.Log(activeState);
+        Debug.Log(animator.GetBool("Grounded"));
+
+
         if (activeState <= 0 && animator.GetBool("Grounded") == true && Time.timeScale == 1)
-            {
-                AttackScript attackScript = attack.GetComponent<AttackScript>();
-                attackScript.activateAttack();
-
-                activeState = activeTime;
+        {
+            activeState = activeTime;
                 
-                animator.SetBool("Attacking", true);
+            animator.SetBool("Attacking", true);
 
-                attackPerforming = true;
+            attackPerforming = true;
+
+            //attack = Instantiate(attackPrefab, transform);
+        }
+    }
+
+    private void StopDefending()
+    {
+        defending = false;
+
+        transform.Rotate(Vector3.up * -defendRotate);
+
+        animator.SetBool("Blocking", false);
+    }
+
+    private void StartDefending()
+    {
+        transform.Rotate(Vector3.up * defendRotate);
+
+        defending = true;
+    }
+
+    private void Defend()
+    {
+        if(Time.timeScale == 1)
+        {
+            if (!(actions.Controls.Jump.inProgress || actions.Controls.Movement.IsPressed()) && groundedStore > 0.8f)
+            {
+                animator.SetBool("Blocking", true);
+
+                gameObject.GetComponent<PlayerHealth>().IFrames(0.1f);
             }
+        }
     }
 
     private void Move()
     {
         if(activeState <= 0.3f){
             Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
+
             characterController.Move(moveSpeed * Time.deltaTime * move);
 
 
@@ -197,5 +235,25 @@ public class PlayerMovement : MonoBehaviour
     {
         float mouseX = HorizontalMouseInput * rotationSpeed * Time.deltaTime;
         transform.Rotate(Vector3.up * mouseX);
+    }
+
+    private void running()
+    {
+        animator.SetBool("Running", true);
+    }
+
+    private void standing()
+    {
+        animator.SetBool("Running", false);
+    }
+
+    private void OnEnable()
+    {
+        actions.Enable();
+    }
+
+    private void OnDisable()
+    {
+        actions.Disable();
     }
 }

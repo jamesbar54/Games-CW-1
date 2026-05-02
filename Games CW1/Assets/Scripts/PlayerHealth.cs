@@ -54,6 +54,11 @@ public class PlayerHealth : MonoBehaviour
         return health / 100;
     }
 
+    public void IFrames(float frames)
+    {
+        iFrames = frames;
+    }
+
     // Update is called once per frame
     void Update()
     {

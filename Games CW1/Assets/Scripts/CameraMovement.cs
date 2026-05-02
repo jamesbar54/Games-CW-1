@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -8,8 +9,6 @@ public class CameraMovement : MonoBehaviour
     private Transform aimAt;
     [SerializeField]
     private Transform goTo;
-
-    public float moveSpeed = 0.1f;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,6 +27,6 @@ public class CameraMovement : MonoBehaviour
 
     void Rotate()
     {
-        transform.position = goTo.position;
+        transform.position += (goTo.position - transform.position) * 0.1f;
     }
 }

@@ -63,6 +63,14 @@ public class PlayerMovement : MonoBehaviour
     public bool defending = false;
 
     private float defendRotate = 30f;
+    private RaycastHit hit;
+
+    public float rayCastX = 1.56f;
+    public float rayCastY = 1f;
+    public float rayCastZ = 1.27f;
+
+    [SerializeField]
+    private float damage = 10.0f;
 
 
 
@@ -126,28 +134,18 @@ public class PlayerMovement : MonoBehaviour
 
             if(activeState > 0)
             {
-                if(activeState < 0.8 && attack.IsUnityNull())
-                {
-                    attack = Instantiate(attackPrefab, transform);
-                }
-
                 activeState -= 1 * Time.deltaTime;
-
-                if (activeState < 0.5)
-                {
-                    animator.SetBool("Attacking", false);
-                }
             }
             else if(attackPerforming == true)
             {
-                AttackScript attackScript = attack.GetComponent<AttackScript>();
-                attackScript.endAttack();
-
                 attackPerforming = false;
             }
-        }
 
-        
+            if(activeState < 0.4)
+            {
+                animator.SetBool("Attacking", false);
+            }
+        }
     }
 
     private void PerformJump()
@@ -177,9 +175,27 @@ public class PlayerMovement : MonoBehaviour
                 
             animator.SetBool("Attacking", true);
 
-            attackPerforming = true;
+            // attackPerforming = true;
 
-            //attack = Instantiate(attackPrefab, transform);
+            // //attack = Instantiate(attackPrefab, transform);
+
+
+            if(Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left), out hit, 4) || Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 0.5f), transform.TransformDirection(Vector3.left), out hit, 4))
+            {
+                Debug.Log("hi");
+
+                HealthScript health = hit.collider.GetComponent<HealthScript>();
+
+                if(health != null)
+                {
+                    health.takeDamage(damage);
+                }
+            }
+            else
+            {
+                Debug.DrawRay( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left) * hit.distance, Color.blue);
+                Debug.Log("no hi");
+            }
         }
     }
 

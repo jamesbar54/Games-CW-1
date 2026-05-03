@@ -20,6 +20,8 @@ public class AttackScript : MonoBehaviour
 
     void Awake()
     {
+
+        gameObject.GetComponent<Rigidbody>().sleepThreshold = 0;
         
     }
 

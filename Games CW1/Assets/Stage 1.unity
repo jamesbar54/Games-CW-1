@@ -274,8 +274,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 349350723}
     - target: {fileID: 6196202227174888237, guid: e3cec6f1adb330341a9df6166bfed2a7, type: 3}
-      propertyPath: deathDelay
-      value: 1
+      propertyPath: health
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 9070492379318510530, guid: e3cec6f1adb330341a9df6166bfed2a7, type: 3}
       propertyPath: m_Name
@@ -894,22 +894,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meshtint Free Knight
       objectReference: {fileID: 0}
-    - target: {fileID: 2323470766718895729, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
-      propertyPath: attackPrefab
-      value: 
-      objectReference: {fileID: 3604457116191926705, guid: a1bedd7fba550684290957dd772c923b, type: 3}
-    - target: {fileID: 3096916785326280346, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096916785326280346, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3096916785326280346, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.77
-      objectReference: {fileID: 0}
     - target: {fileID: 4135972154785244096, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -958,9 +942,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9217910280284734937, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
+    - target: {fileID: 7649652363875597623, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
+      propertyPath: health
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

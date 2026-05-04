@@ -15,6 +15,8 @@ public class HealthScript : MonoBehaviour
     public float deathDelay = 10;
     private float deathTime = float.PositiveInfinity;
 
+    private bool fade = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -58,9 +60,24 @@ public class HealthScript : MonoBehaviour
 
         if (deathTime < Time.time)
         {
-            //Destroy(gameObject);
+            SceneChangeScript changer = gameObject.GetComponentInParent<SceneChangeScript>();
 
-            gameObject.GetComponentInParent<SceneChangeScript>().checker(gameObject);
+            if(changer != null)
+            {
+                changer.checker(gameObject);
+            }
+            else
+            {
+                gameObject.transform.localScale -= new Vector3(0.001f, 0.001f, 0.001f);
+            }
         }
+
+        if(gameObject.transform.localScale.y <= 0)
+        {
+            Debug.Log("kill now");
+
+            Destroy(gameObject);
+        }
+
     }
 }

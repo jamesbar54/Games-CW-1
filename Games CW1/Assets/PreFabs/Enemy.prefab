@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c90bbcd9e362164098d7e802044f611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DamageScript
-  health: 1000
+  health: 50
   iFrames: 0
   deathDelay: 1
 --- !u!114 &2679433612305746463

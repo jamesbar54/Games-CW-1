@@ -57,7 +57,7 @@ public class EnemyTarget : MonoBehaviour
                 if (!attacking)
                 {
                     damageTimer = Time.time - 0.3f;
-                    Debug.Log(damageTimer);
+                    // Debug.Log(damageTimer);
                 }
                 agent.SetDestination(transform.position);
                 attack();
@@ -72,7 +72,7 @@ public class EnemyTarget : MonoBehaviour
 
     private void death()
     {
-        Debug.Log("dead");
+        //Debug.Log("dead");
 
         animator.SetBool("Dead", true);
         animator.SetBool("Attacking", false);
@@ -83,7 +83,7 @@ public class EnemyTarget : MonoBehaviour
 
     public void killed()
     {
-        Debug.Log("killed");
+        //Debug.Log("killed");
 
         dead = true;
     }
@@ -106,13 +106,13 @@ public class EnemyTarget : MonoBehaviour
     {
         animator.SetBool("Attacking", true);
 
-        Debug.Log("Attack");
+        // Debug.Log("Attack");
         attacking = true;
 
         if(damageTimer + setTime < Time.time)
         {    
 
-            Debug.Log("Hit");
+            // Debug.Log("Hit");
 
             PlayerHealth health = target.GetComponent<PlayerHealth>();
 

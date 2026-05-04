@@ -165,8 +165,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void PerformAttack()
     {
-        Debug.Log(activeState);
-        Debug.Log(animator.GetBool("Grounded"));
+        // Debug.Log(activeState);
+        // Debug.Log(animator.GetBool("Grounded"));
 
 
         if (activeState <= 0 && animator.GetBool("Grounded") == true && Time.timeScale == 1)
@@ -182,7 +182,7 @@ public class PlayerMovement : MonoBehaviour
 
             if(Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left), out hit, 4) || Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 0.5f), transform.TransformDirection(Vector3.left), out hit, 4))
             {
-                Debug.Log("hi");
+                // Debug.Log("hi");
 
                 HealthScript health = hit.collider.GetComponent<HealthScript>();
 
@@ -193,8 +193,8 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                Debug.DrawRay( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left) * hit.distance, Color.blue);
-                Debug.Log("no hi");
+                // Debug.DrawRay( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left) * hit.distance, Color.blue);
+                // Debug.Log("no hi");
             }
         }
     }

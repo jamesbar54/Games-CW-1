@@ -378,7 +378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   DeathMenu: {fileID: 5810461934556689149}
   damageOverlay: {fileID: 3068132856693422421}
-  health: 1000
+  health: 100
   iFrames: 0
 --- !u!114 &5323644657488125599
 MonoBehaviour:

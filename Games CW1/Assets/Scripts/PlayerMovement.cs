@@ -22,18 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     [SerializeField]
     private CharacterController characterController;
-    private float HorizontalMouseInput;
-
-
-    [SerializeField]
-    private GameObject attack;
-
-    [SerializeField]
-    private GameObject weapon;
-
-    [SerializeField]
-    private GameObject attackPrefab;
-    
+    private float HorizontalMouseInput;    
 
     [Header("Physics")]
     

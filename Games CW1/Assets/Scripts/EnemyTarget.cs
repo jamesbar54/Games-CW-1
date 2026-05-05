@@ -1,3 +1,4 @@
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -5,6 +6,8 @@ public class EnemyTarget : MonoBehaviour
 {
     [Header("Objects")]
     public Vector3 targetLocation;
+
+    public GameObject[] targets;
 
     public GameObject target;
 
@@ -27,6 +30,17 @@ public class EnemyTarget : MonoBehaviour
     {
         agent.speed = speed;
         agent.SetDestination(targetLocation);
+
+        targets = GameObject.FindGameObjectsWithTag("Player");
+
+        if(targets.Length == 1)
+        {
+            target = targets[0];
+        }
+        else
+        {
+            Debug.LogError("Can't find player");
+        }
     }
 
 

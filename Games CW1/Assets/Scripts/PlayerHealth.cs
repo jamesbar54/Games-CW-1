@@ -7,6 +7,9 @@ public class PlayerHealth : MonoBehaviour
     public GameObject damageOverlay;
 
     [SerializeField]
+    private float maxHealth = 100.0f;
+
+    [SerializeField]
     private float health = 100.0f;
 
     [SerializeField]
@@ -37,6 +40,16 @@ public class PlayerHealth : MonoBehaviour
             DamgeOverlayScript dOverlay = damageOverlay.GetComponent<DamgeOverlayScript>();
 
             dOverlay.onDamage();
+        }
+    }
+
+    public void Heal(float healAmount)
+    {
+        health += healAmount;
+
+        if(health > maxHealth)
+        {
+            health = maxHealth;
         }
     }
 

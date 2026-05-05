@@ -43,15 +43,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Menu",
-                    "type": "Button",
-                    "id": "0b4ca908-8055-4402-9338-06699bc6ee3e",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Defend",
                     "type": "Button",
                     "id": "4cb9a300-9a35-4f12-95fa-2ff2decc97d9",
@@ -152,19 +143,8 @@
                 },
                 {
                     "name": "",
-                    "id": "bc64982b-c166-4f10-b517-bb41e54b393d",
-                    "path": "<Keyboard>/1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Menu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "e06f3d30-2266-4c29-a526-3509b6286551",
-                    "path": "<Keyboard>/r",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -192,7 +172,7 @@
                 {
                     "name": "",
                     "id": "b02b6517-bf32-4d98-bf5a-b5fb1fd5ac82",
-                    "path": "<Keyboard>/2",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

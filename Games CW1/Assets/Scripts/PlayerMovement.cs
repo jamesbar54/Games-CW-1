@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -167,25 +168,25 @@ public class PlayerMovement : MonoBehaviour
             // attackPerforming = true;
 
             // //attack = Instantiate(attackPrefab, transform);
-
-
-            if(Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left), out hit, 4) || Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 0.5f), transform.TransformDirection(Vector3.left), out hit, 4))
-            {
-                // Debug.Log("hi");
-
-                HealthScript health = hit.collider.GetComponent<HealthScript>();
-
-                if(health != null)
-                {
-                    health.takeDamage(damage);
-                }
-            }
-            else
-            {
-                // Debug.DrawRay( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left) * hit.distance, Color.blue);
-                // Debug.Log("no hi");
-            }
+            
+            StartCoroutine(delay(0.4f));
+            
         }
+    }
+
+    System.Collections.IEnumerator delay(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        if(Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left), out hit, 4) || Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 0.5f), transform.TransformDirection(Vector3.left), out hit, 4))
+        {
+            HealthScript health = hit.collider.GetComponent<HealthScript>();
+
+            if(health != null)
+            {
+                health.takeDamage(damage);
+            }
+        }       
     }
 
     private void StopDefending()

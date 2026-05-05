@@ -21,8 +21,10 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-    public void takeDamage(float damage)
+    public bool takeDamage(float damage)
     {
+        bool hit = false;
+
         if(iFrames <= 0)
         {
             health -= damage;
@@ -33,14 +35,19 @@ public class PlayerHealth : MonoBehaviour
             {
                 kill();
             }
+
+            hit = true;
+
+            if(damageOverlay != null)
+            {
+                DamgeOverlayScript dOverlay = damageOverlay.GetComponent<DamgeOverlayScript>();
+
+                dOverlay.onDamage();
+            }
+
         }
 
-        if(damageOverlay != null)
-        {
-            DamgeOverlayScript dOverlay = damageOverlay.GetComponent<DamgeOverlayScript>();
-
-            dOverlay.onDamage();
-        }
+        return hit;
     }
 
     public void Heal(float healAmount)

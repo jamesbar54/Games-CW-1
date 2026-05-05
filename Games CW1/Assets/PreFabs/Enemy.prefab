@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTarget
   targetLocation: {x: 0, y: 0, z: 0}
+  targets: []
   target: {fileID: 0}
   agent: {fileID: 4325193207986961662}
   animator: {fileID: 8626185744942995004}
@@ -152,6 +153,7 @@ MonoBehaviour:
   dist2: 20
   speed: 1
   setTime: 0.88
+  stagger: 0.2
 --- !u!195 &4325193207986961662
 NavMeshAgent:
   m_ObjectHideFlags: 0

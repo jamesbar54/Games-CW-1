@@ -280,9 +280,10 @@ GameObject:
   - component: {fileID: 956203985096239983}
   - component: {fileID: 1355045272048876062}
   - component: {fileID: 269680167619107212}
+  - component: {fileID: 1249608431148312484}
   m_Layer: 7
   m_Name: Meshtint Free Knight
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,9 +350,6 @@ MonoBehaviour:
   rotationSpeed: 80
   animator: {fileID: 5103017480769319240}
   characterController: {fileID: 956203985096239983}
-  attack: {fileID: 0}
-  weapon: {fileID: 0}
-  attackPrefab: {fileID: 3604457116191926705, guid: a1bedd7fba550684290957dd772c923b, type: 3}
   gravityValue: -9.81
   groundedValue: 1
   jumpHeight: 0.2
@@ -378,6 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   DeathMenu: {fileID: 5810461934556689149}
   damageOverlay: {fileID: 3068132856693422421}
+  maxHealth: 100
   health: 100
   iFrames: 0
 --- !u!114 &5323644657488125599
@@ -466,6 +465,33 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039999515526433709}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1249608431148312484
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039999515526433709}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1414766392762247513
 GameObject:
   m_ObjectHideFlags: 0

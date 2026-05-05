@@ -35,6 +35,10 @@ public class HealthScript : MonoBehaviour
             {
                 death();
             }
+
+            Debug.Log("damage");
+
+            gameObject.GetComponent<EnemyTarget>().Stagger();
         }
     }
 

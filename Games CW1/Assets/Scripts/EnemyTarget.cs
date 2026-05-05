@@ -26,6 +26,8 @@ public class EnemyTarget : MonoBehaviour
 
     private bool dead = false;
 
+    public float stagger = 3;
+
     void Awake()
     {
         agent.speed = speed;
@@ -82,6 +84,11 @@ public class EnemyTarget : MonoBehaviour
             death();
         }
 
+        if(Time.time >= damageTimer - (stagger / 2))
+        {
+            animator.SetBool("Stagger", false);
+        }
+
     }
 
     private void death()
@@ -90,8 +97,6 @@ public class EnemyTarget : MonoBehaviour
 
         animator.SetBool("Dead", true);
         animator.SetBool("Attacking", false);
-
-    
     }
 
 
@@ -118,22 +123,36 @@ public class EnemyTarget : MonoBehaviour
 
     private void attack()
     {
-        animator.SetBool("Attacking", true);
-
-        // Debug.Log("Attack");
         attacking = true;
+        animator.SetBool("Attacking", true);
 
         if(damageTimer + setTime < Time.time)
         {    
+
+            // Debug.Log("Attack");
 
             // Debug.Log("Hit");
 
             PlayerHealth health = target.GetComponent<PlayerHealth>();
 
-            health.takeDamage(5);
+            bool hit = health.takeDamage(5);
 
             damageTimer = Time.time;
             
+            Debug.Log(hit);
+
+            if (!hit)
+            {
+                Stagger();
+            }
         }
+    }
+
+    public void Stagger()
+    {
+        Debug.Log("Stagger");
+
+        damageTimer = Time.time + stagger;
+        animator.SetBool("Stagger", true);        
     }
 }

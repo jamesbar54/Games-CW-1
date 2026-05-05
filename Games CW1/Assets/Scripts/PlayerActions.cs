@@ -129,15 +129,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Menu"",
-                    ""type"": ""Button"",
-                    ""id"": ""0b4ca908-8055-4402-9338-06699bc6ee3e"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Defend"",
                     ""type"": ""Button"",
                     ""id"": ""4cb9a300-9a35-4f12-95fa-2ff2decc97d9"",
@@ -238,19 +229,8 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""bc64982b-c166-4f10-b517-bb41e54b393d"",
-                    ""path"": ""<Keyboard>/1"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Menu"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""e06f3d30-2266-4c29-a526-3509b6286551"",
-                    ""path"": ""<Keyboard>/r"",
+                    ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -278,7 +258,7 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""b02b6517-bf32-4d98-bf5a-b5fb1fd5ac82"",
-                    ""path"": ""<Keyboard>/2"",
+                    ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -297,7 +277,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         m_Controls_Jump = m_Controls.FindAction("Jump", throwIfNotFound: true);
         m_Controls_Mouse = m_Controls.FindAction("Mouse", throwIfNotFound: true);
         m_Controls_Attack = m_Controls.FindAction("Attack", throwIfNotFound: true);
-        m_Controls_Menu = m_Controls.FindAction("Menu", throwIfNotFound: true);
         m_Controls_Defend = m_Controls.FindAction("Defend", throwIfNotFound: true);
         // Menu
         m_Menu = asset.FindActionMap("Menu", throwIfNotFound: true);
@@ -387,7 +366,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Controls_Jump;
     private readonly InputAction m_Controls_Mouse;
     private readonly InputAction m_Controls_Attack;
-    private readonly InputAction m_Controls_Menu;
     private readonly InputAction m_Controls_Defend;
     /// <summary>
     /// Provides access to input actions defined in input action map "Controls".
@@ -416,10 +394,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Controls/Attack".
         /// </summary>
         public InputAction @Attack => m_Wrapper.m_Controls_Attack;
-        /// <summary>
-        /// Provides access to the underlying input action "Controls/Menu".
-        /// </summary>
-        public InputAction @Menu => m_Wrapper.m_Controls_Menu;
         /// <summary>
         /// Provides access to the underlying input action "Controls/Defend".
         /// </summary>
@@ -462,9 +436,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @Attack.started += instance.OnAttack;
             @Attack.performed += instance.OnAttack;
             @Attack.canceled += instance.OnAttack;
-            @Menu.started += instance.OnMenu;
-            @Menu.performed += instance.OnMenu;
-            @Menu.canceled += instance.OnMenu;
             @Defend.started += instance.OnDefend;
             @Defend.performed += instance.OnDefend;
             @Defend.canceled += instance.OnDefend;
@@ -491,9 +462,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @Attack.started -= instance.OnAttack;
             @Attack.performed -= instance.OnAttack;
             @Attack.canceled -= instance.OnAttack;
-            @Menu.started -= instance.OnMenu;
-            @Menu.performed -= instance.OnMenu;
-            @Menu.canceled -= instance.OnMenu;
             @Defend.started -= instance.OnDefend;
             @Defend.performed -= instance.OnDefend;
             @Defend.canceled -= instance.OnDefend;
@@ -661,13 +629,6 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnAttack(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Menu" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnMenu(InputAction.CallbackContext context);
         /// <summary>
         /// Method invoked when associated input action "Defend" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>

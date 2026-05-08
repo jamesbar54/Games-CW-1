@@ -759,7 +759,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 561097c508dae744c8ced482d3137e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneChangeScript
-  nextScene: Stage 2
 --- !u!4 &923881001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8378305016021551963, guid: e7a79a14190d3d34f93236ba7164d734, type: 3}
@@ -1123,6 +1122,10 @@ PrefabInstance:
     - target: {fileID: 2898472996888695072, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286908364954305278, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4135972154785244096, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
       propertyPath: m_AnchorMax.x

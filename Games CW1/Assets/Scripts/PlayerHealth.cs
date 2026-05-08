@@ -21,6 +21,11 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
+    void Awake()
+    {
+        maxHealth = PlayerPrefs.GetFloat("maxHealth");
+    }
+
     public bool takeDamage(float damage)
     {
         bool hit = false;

@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneChangeScript : MonoBehaviour
 {
-    public string nextScene;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +22,7 @@ public class SceneChangeScript : MonoBehaviour
         {
             Debug.Log("work");
 
-            SceneManager.LoadScene(nextScene);
+            GameObject.FindGameObjectWithTag("endLevel").GetComponent<UpgradeScript>().endLevel();
         }
     }
 

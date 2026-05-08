@@ -3,6 +3,7 @@ using System.Data;
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -79,6 +80,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+        if(SceneManager.GetActiveScene().name == "Stage 1")
+        {
+            Debug.Log("stage 1");
+            PlayerPrefs.SetFloat("maxHealth", 100);
+            PlayerPrefs.SetFloat("damage", 10);
+        }
+
         actions = new PlayerActions();
         actions.Controls.Movement.performed += cxt => moveInput = cxt.ReadValue<Vector2>();
         actions.Controls.Jump.performed += cxt => PerformJump();
@@ -88,6 +96,8 @@ public class PlayerMovement : MonoBehaviour
         actions.Controls.Defend.canceled += cxt => StopDefending();
         
         upadateMouse();
+
+        damage = PlayerPrefs.GetFloat("damage");
     }
 
     void Start()

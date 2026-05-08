@@ -17,6 +17,11 @@ public class CameraMovement : MonoBehaviour
         
     }
 
+    public void volumeUpdate()
+    {
+        gameObject.GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("musicVolume") / 2;
+    }
+
     // Update is called once per frame
     void Update()
     {

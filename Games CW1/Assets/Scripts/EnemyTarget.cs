@@ -1,4 +1,3 @@
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -34,6 +33,8 @@ public class EnemyTarget : MonoBehaviour
         agent.SetDestination(targetLocation);
 
         targets = GameObject.FindGameObjectsWithTag("Player");
+
+        Debug.Log(targets);
 
         if(targets.Length == 1)
         {

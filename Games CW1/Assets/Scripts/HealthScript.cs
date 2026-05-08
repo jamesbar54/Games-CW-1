@@ -70,10 +70,7 @@ public class HealthScript : MonoBehaviour
             {
                 changer.checker(gameObject);
             }
-            else
-            {
-                gameObject.transform.localScale -= new Vector3(0.001f, 0.001f, 0.001f);
-            }
+            gameObject.transform.localScale -= new Vector3(0.001f, 0.001f, 0.001f);
         }
 
         if(gameObject.transform.localScale.y <= 0)

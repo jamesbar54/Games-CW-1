@@ -1,3 +1,4 @@
+using Palmmedia.ReportGenerator.Core;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,12 @@ public class PauseMenuScript : MonoBehaviour
     public Button Settings;
     public Button QuitButton;
     public Button ERR;
+
+    public Mask mask;
+    private float maskMove = -1400;
+    private bool settingsActive = false;
+    public Button backButton;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,6 +33,8 @@ public class PauseMenuScript : MonoBehaviour
 
         Resume.onClick.AddListener(toggleMenu);
         QuitButton.onClick.AddListener(exitGame);
+        Settings.onClick.AddListener(SettingsActivate);
+        backButton.onClick.AddListener(SettingsDeactivate);
 
         resetButtons();
     }
@@ -37,7 +46,29 @@ public class PauseMenuScript : MonoBehaviour
 
     private void openMenu()
     {
-        toggleMenu();    
+        if (!settingsActive)
+        {
+            toggleMenu();
+        }    
+    }
+
+    private void SettingsActivate()
+    {
+        toggleMenu();
+        Time.timeScale = 0;
+
+        settingsActive = true;
+
+        mask.rectTransform.Translate(Vector3.left * -1400);
+    }
+
+    private void SettingsDeactivate()
+    {
+        Time.timeScale = 1;
+
+        settingsActive = false;
+
+        mask.rectTransform.Translate(Vector3.left * 1400);
     }
 
     private void exitGame()

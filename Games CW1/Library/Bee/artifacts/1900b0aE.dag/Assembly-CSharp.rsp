@@ -428,11 +428,14 @@
 "Assets/Scripts/HealthBar.cs"
 "Assets/Scripts/HealthScript.cs"
 "Assets/Scripts/MenuAction.cs"
+"Assets/Scripts/mouseSensativityScript.cs"
 "Assets/Scripts/PauseMenuScript.cs"
 "Assets/Scripts/PlayerActions.cs"
 "Assets/Scripts/PlayerHealth.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/playerPrefrences.cs"
 "Assets/Scripts/SceneChangeScript.cs"
+"Assets/Scripts/VolumeChangeScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+

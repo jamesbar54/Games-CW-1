@@ -3,6 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneChangeScript : MonoBehaviour
 {
+    public string nextScene;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,7 +13,7 @@ public class SceneChangeScript : MonoBehaviour
 
     public void checker(GameObject obj)
     {
-        Destroy(obj);
+        //Destroy(obj);
 
         Debug.Log("check");
 
@@ -21,7 +23,7 @@ public class SceneChangeScript : MonoBehaviour
         {
             Debug.Log("work");
 
-            SceneManager.LoadScene("Stage 2");
+            SceneManager.LoadScene(nextScene);
         }
     }
 

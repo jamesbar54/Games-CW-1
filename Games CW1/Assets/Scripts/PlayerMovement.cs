@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Data;
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -11,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float moveSpeed = 2.0f;
     [SerializeField]
-    private float rotationSpeed = 80.0f;
+    private float rotationSpeed = 100.0f;
     #endregion
 
     #region INPUT
@@ -23,7 +24,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     [SerializeField]
     private CharacterController characterController;
-    private float HorizontalMouseInput;    
+    private float HorizontalMouseInput;  
+    private float mouseSenativity;  
 
     [Header("Physics")]
     
@@ -85,6 +87,7 @@ public class PlayerMovement : MonoBehaviour
         actions.Controls.Defend.started += cxt => StartDefending();
         actions.Controls.Defend.canceled += cxt => StopDefending();
         
+        upadateMouse();
     }
 
     void Start()
@@ -237,9 +240,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void upadateMouse()
+    {
+        mouseSenativity = PlayerPrefs.GetFloat("mouseSen");
+    }
+
     private void Rotate()
     {
-        float mouseX = HorizontalMouseInput * rotationSpeed * Time.deltaTime;
+        float mouseX = HorizontalMouseInput * rotationSpeed * mouseSenativity * Time.deltaTime;
         transform.Rotate(Vector3.up * mouseX);
     }
 

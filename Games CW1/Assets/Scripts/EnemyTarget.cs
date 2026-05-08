@@ -85,7 +85,7 @@ public class EnemyTarget : MonoBehaviour
             death();
         }
 
-        if(Time.time >= damageTimer - (stagger / 2))
+        if(Time.time >= damageTimer - (stagger / 5))
         {
             animator.SetBool("Stagger", false);
         }

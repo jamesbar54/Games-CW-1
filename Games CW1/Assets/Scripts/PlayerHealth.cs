@@ -24,6 +24,9 @@ public class PlayerHealth : MonoBehaviour
     void Awake()
     {
         maxHealth = PlayerPrefs.GetFloat("maxHealth");
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public bool takeDamage(float damage)

@@ -30,6 +30,9 @@ public class UpgradeScript : MonoBehaviour
     {
         if (!active)
         {
+            health.enabled = true;
+            damage.enabled = true;
+
             Time.timeScale = 0;
 
             mask.rectTransform.Translate(Vector3.right * 1300);

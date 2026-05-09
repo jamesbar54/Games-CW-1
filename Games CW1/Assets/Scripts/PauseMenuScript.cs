@@ -57,6 +57,9 @@ public class PauseMenuScript : MonoBehaviour
         toggleMenu();
         Time.timeScale = 0;
 
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         settingsActive = true;
 
         mask.rectTransform.Translate(Vector3.left * -1400);
@@ -65,6 +68,9 @@ public class PauseMenuScript : MonoBehaviour
     private void SettingsDeactivate()
     {
         Time.timeScale = 1;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         settingsActive = false;
 
@@ -86,12 +92,18 @@ public class PauseMenuScript : MonoBehaviour
 
         if(menu.GetComponent<Image>().enabled == false)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             enableMenu = true;
 
             Time.timeScale = 0;
         }
         else
         {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
             enableMenu = false;
 
             Time.timeScale = 1;

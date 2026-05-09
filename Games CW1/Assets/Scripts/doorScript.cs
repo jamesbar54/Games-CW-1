@@ -4,7 +4,8 @@ using UnityEngine.UIElements;
 public class doorScript : MonoBehaviour
 {
     private float initialRotation;
-    public bool opening = false;
+    private bool opening1 = false;
+    private bool opening2 = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,19 +15,37 @@ public class doorScript : MonoBehaviour
 
     public void open()
     {
-        opening = true;
+        opening1 = true;
+    }
+
+    public void openingTrigger()
+    {
+        opening2 = true;        
+    }
+
+    public void closingTrigger()
+    {
+        if (!opening1)
+        {
+            opening2 = false;  
+        }      
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(opening && transform.rotation.eulerAngles.y <= initialRotation + 90)
+        if(opening1 && opening2)
         {
             Debug.Log(transform.rotation.y);
             Debug.Log(initialRotation);
             
 
-            transform.Rotate(0, 0.5f, 0);
+            transform.Rotate(0, -30 * Time.deltaTime, 0);
+
+            if(transform.rotation.eulerAngles.y <= initialRotation - 85 && transform.rotation.eulerAngles.y >= initialRotation - 95)
+            {
+                opening1 = false;
+            }
         }
     }
 }

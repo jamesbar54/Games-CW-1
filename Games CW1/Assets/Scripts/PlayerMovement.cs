@@ -83,7 +83,6 @@ public class PlayerMovement : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "Stage 1")
         {
             Debug.Log("stage 1");
-            PlayerPrefs.SetFloat("maxHealth", 100);
             PlayerPrefs.SetFloat("damage", 10);
         }
 
@@ -215,6 +214,8 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.Rotate(Vector3.up * defendRotate);
 
+        animator.SetBool("Running", false);
+
         defending = true;
     }
 
@@ -222,7 +223,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(Time.timeScale == 1)
         {
-            if (!(actions.Controls.Jump.inProgress || actions.Controls.Movement.IsPressed()) && groundedStore > 0.8f)
+            if (!(actions.Controls.Jump.inProgress) && groundedStore > 0.8f)
             {
                 animator.SetBool("Blocking", true);
 

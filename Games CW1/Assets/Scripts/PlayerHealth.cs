@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -23,7 +24,14 @@ public class PlayerHealth : MonoBehaviour
 
     void Awake()
     {
+        if(SceneManager.GetActiveScene().name == "Stage 1")
+        {
+            Debug.Log("stage 1");
+            PlayerPrefs.SetFloat("maxHealth", 100);
+        }
+
         maxHealth = PlayerPrefs.GetFloat("maxHealth");
+        health = maxHealth;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

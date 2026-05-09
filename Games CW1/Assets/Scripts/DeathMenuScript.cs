@@ -12,6 +12,8 @@ public class DeathMenuScript : MonoBehaviour
     public Button GiveUp;
     public Button ERR;
 
+    private bool dead = false;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,12 +25,22 @@ public class DeathMenuScript : MonoBehaviour
 
     public void onDeath()
     {
+        dead = true;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         EndScreen.GetComponent<Image>().enabled = true;
         
         Retry.GetComponent<Text>().enabled = true;
         GiveUp.GetComponent<Text>().enabled = true;
         Retry.GetComponent<Button>().enabled = true;
         GiveUp.GetComponent<Button>().enabled = true;
+    }
+
+    public bool menuActive()
+    {
+        return dead;
     }
 
     private void resetButtons()

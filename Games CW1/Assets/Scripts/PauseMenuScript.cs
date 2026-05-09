@@ -18,6 +18,8 @@ public class PauseMenuScript : MonoBehaviour
     private bool settingsActive = false;
     public Button backButton;
 
+    public GameObject deathScript;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -46,7 +48,7 @@ public class PauseMenuScript : MonoBehaviour
 
     private void openMenu()
     {
-        if (!settingsActive)
+        if (!settingsActive && !deathScript.GetComponent<DeathMenuScript>().menuActive())
         {
             toggleMenu();
         }    

@@ -1812,7 +1812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.45000002, y: 0.32700002}
   m_AnchorMax: {x: 0.5517535, y: 0.384}
-  m_AnchoredPosition: {x: -1, y: 2}
+  m_AnchoredPosition: {x: 58, y: -9.9164}
   m_SizeDelta: {x: 63.067505, y: 19.832703}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2974864269752147827
@@ -5086,3 +5086,4 @@ MonoBehaviour:
   ERR: {fileID: 8207457214011848488}
   mask: {fileID: 2717030616035808088}
   backButton: {fileID: 115398698606634516}
+  deathScript: {fileID: 5810461934556689149}

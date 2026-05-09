@@ -30,6 +30,9 @@ public class UpgradeScript : MonoBehaviour
     {
         if (!active)
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             health.enabled = true;
             damage.enabled = true;
 
@@ -45,7 +48,7 @@ public class UpgradeScript : MonoBehaviour
     {
         //Debug.Log(PlayerPrefs.GetFloat("maxFloat"));
 
-        PlayerPrefs.SetFloat("maxHealth", PlayerPrefs.GetFloat("maxHealth") + 50);
+        PlayerPrefs.SetFloat("maxHealth", PlayerPrefs.GetFloat("maxHealth") + 20);
 
         switchScene();
     }
@@ -59,6 +62,7 @@ public class UpgradeScript : MonoBehaviour
 
     private void switchScene()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(nextScene);
     }
 

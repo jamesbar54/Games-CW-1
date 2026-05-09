@@ -423,6 +423,7 @@
 "Assets/Scripts/DamgeOverlayScript.cs"
 "Assets/Scripts/DeathMenuScript.cs"
 "Assets/Scripts/doorScript.cs"
+"Assets/Scripts/doorTriggerScript.cs"
 "Assets/Scripts/EnablerScript.cs"
 "Assets/Scripts/EnemyTarget.cs"
 "Assets/Scripts/HealScript.cs"

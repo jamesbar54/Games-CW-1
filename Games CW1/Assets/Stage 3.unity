@@ -1051,6 +1051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 667989402}
+  - component: {fileID: 667989403}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: Untagged
@@ -1079,6 +1080,18 @@ Transform:
   - {fileID: 955319944}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &667989403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667989401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561097c508dae744c8ced482d3137e08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChangeScript
 --- !u!1001 &682589273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4492,6 +4505,10 @@ PrefabInstance:
     - target: {fileID: 2898472996888695072, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3302988667247435147, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
+      propertyPath: nextScene
+      value: Stage 4
       objectReference: {fileID: 0}
     - target: {fileID: 3973164982451964745, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
       propertyPath: slider

@@ -198,6 +198,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 health.takeDamage(damage);
             }
+
+            rockScript rock = hit.collider.GetComponent<rockScript>();
+
+            if (rock)
+            {
+                rock.rebound();
+            }
         }       
     }
 

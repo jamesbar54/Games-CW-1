@@ -428,6 +428,7 @@
 "Assets/Scripts/EnemyTarget.cs"
 "Assets/Scripts/GolemPunchScript.cs"
 "Assets/Scripts/GolemScript.cs"
+"Assets/Scripts/GolemThrowScript.cs"
 "Assets/Scripts/HealScript.cs"
 "Assets/Scripts/HealthBar.cs"
 "Assets/Scripts/HealthScript.cs"

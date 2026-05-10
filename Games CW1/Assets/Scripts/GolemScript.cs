@@ -7,6 +7,9 @@ public class GolemScript : MonoBehaviour
     [SerializeField]
     private GameObject player;
 
+    [SerializeField]
+    private GameObject golemThrow;
+
     private Physics hit;
 
     public float cooldownTime = 1.5f;
@@ -24,6 +27,8 @@ public class GolemScript : MonoBehaviour
     public float delayTime = 1.41f;
 
     public Animator animator;
+
+    public Vector3 spawnPos = new Vector3(1, 2, 1.8f);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,6 +49,8 @@ public class GolemScript : MonoBehaviour
         if((player.transform.position - transform.position).sqrMagnitude < 100)
         {
             transform.rotation.SetLookRotation(player.transform.position);
+
+            transform.LookAt(player.transform);
         }
 
         if((player.transform.position - transform.position).sqrMagnitude < 13)
@@ -72,6 +79,9 @@ public class GolemScript : MonoBehaviour
         punchCooldown -= 1* Time.deltaTime;
     }
 
+
+
+
     public void fistCollide()
     {
         if (punch)
@@ -94,15 +104,17 @@ public class GolemScript : MonoBehaviour
 
         if(cooldown <= 0)
         {
+            golemThrow.GetComponent<GolemThrowScript>().throwRock();
+
             animator.SetBool("Throw", true);
 
-            StartCoroutine(attackSpawn(delayTime, target));
+            StartCoroutine(attackSpawn(delayTime));
 
             cooldown = cooldownTime;
         } 
     }
 
-    System.Collections.IEnumerator attackSpawn(float time, Vector3 target)
+    System.Collections.IEnumerator attackSpawn(float time)
     {
         Debug.Log("Wait");
 
@@ -114,8 +126,9 @@ public class GolemScript : MonoBehaviour
 
         Debug.Log(transform.position);
 
-        GameObject rock = Instantiate(projectile, transform.position + transform.rotation * new Vector3(0, 2, 2), new Quaternion(0,0,0,0));
+        GameObject rock = Instantiate(projectile, transform.position + transform.rotation * spawnPos, new Quaternion(0,0,0,0));
 
-        rock.GetComponent<Rigidbody>().AddForce((target - rock.transform.position) * 10000);
+        rock.GetComponent<Rigidbody>().AddForce((player.transform.position + new Vector3(0, 1, 0) - rock.transform.position) * 10000);
+        rock.GetComponent<Rigidbody>().AddTorque(new Vector3(10000, -10000, 0));
     }
 }

@@ -7,6 +7,7 @@ TagManager:
   - Floor
   - Enemy
   - endLevel
+  - Golem
   layers:
   - Default
   - TransparentFX

@@ -390,7 +390,10 @@
         380,
         381,
         382,
-        383
+        383,
+        384,
+        385,
+        386
       ],
       "DebugActionIndex": 0
     },
@@ -557,6 +560,42 @@
       "DebugActionIndex": 9
     },
     {
+      "Annotation": "CopyFiles New folder/Games CW1_Data/resources.assets",
+      "DisplayName": "Copying resources.assets",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win642/Data/resources.assets"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "New folder/Games CW1_Data/resources.assets"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 10
+    },
+    {
+      "Annotation": "CopyFiles New folder/Games CW1_Data/resources.assets.resS",
+      "DisplayName": "Copying resources.assets.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win642/Data/resources.assets.resS"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "New folder/Games CW1_Data/resources.assets.resS"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 11
+    },
+    {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Resources/unity_builtin_extra",
       "DisplayName": "Copying unity_builtin_extra",
       "ActionType": "CopyFiles",
@@ -572,7 +611,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 10
+      "DebugActionIndex": 12
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/RuntimeInitializeOnLoads.json",
@@ -590,7 +629,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 11
+      "DebugActionIndex": 13
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/ScriptingAssemblies.json",
@@ -608,7 +647,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 12
+      "DebugActionIndex": 14
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/sharedassets0.assets",
@@ -626,7 +665,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 13
+      "DebugActionIndex": 15
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/sharedassets0.assets.resS",
@@ -644,7 +683,25 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 14
+      "DebugActionIndex": 16
+    },
+    {
+      "Annotation": "CopyFiles New folder/Games CW1_Data/sharedassets0.resource",
+      "DisplayName": "Copying sharedassets0.resource",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win642/Data/sharedassets0.resource"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "New folder/Games CW1_Data/sharedassets0.resource"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 17
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/sharedassets1.assets",
@@ -662,25 +719,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 15
-    },
-    {
-      "Annotation": "CopyFiles New folder/Games CW1_Data/sharedassets1.assets.resS",
-      "DisplayName": "Copying sharedassets1.assets.resS",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/PlayerDataCache/Win642/Data/sharedassets1.assets.resS"
-      ],
-      "InputFlags": [
-        0
-      ],
-      "Outputs": [
-        "New folder/Games CW1_Data/sharedassets1.assets.resS"
-      ],
-      "OutputFlags": [
-        2
-      ],
-      "DebugActionIndex": 16
+      "DebugActionIndex": 18
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/sharedassets2.assets",
@@ -698,14 +737,32 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 17
+      "DebugActionIndex": 19
+    },
+    {
+      "Annotation": "CopyFiles New folder/Games CW1_Data/sharedassets2.assets.resS",
+      "DisplayName": "Copying sharedassets2.assets.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win642/Data/sharedassets2.assets.resS"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "New folder/Games CW1_Data/sharedassets2.assets.resS"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 20
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/boot.config_tyr4.info",
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 53375,
+      "PayloadLength": 53551,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "InputFlags": [],
@@ -715,7 +772,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 18
+      "DebugActionIndex": 21
     },
     {
       "Annotation": "AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config",
@@ -733,14 +790,17 @@
         "Library/PlayerDataCache/Win642/Data/level1.resS",
         "Library/PlayerDataCache/Win642/Data/level2",
         "Library/PlayerDataCache/Win642/Data/level2.resS",
+        "Library/PlayerDataCache/Win642/Data/resources.assets",
+        "Library/PlayerDataCache/Win642/Data/resources.assets.resS",
         "Library/PlayerDataCache/Win642/Data/Resources/unity_builtin_extra",
         "Library/PlayerDataCache/Win642/Data/RuntimeInitializeOnLoads.json",
         "Library/PlayerDataCache/Win642/Data/ScriptingAssemblies.json",
         "Library/PlayerDataCache/Win642/Data/sharedassets0.assets",
         "Library/PlayerDataCache/Win642/Data/sharedassets0.assets.resS",
+        "Library/PlayerDataCache/Win642/Data/sharedassets0.resource",
         "Library/PlayerDataCache/Win642/Data/sharedassets1.assets",
-        "Library/PlayerDataCache/Win642/Data/sharedassets1.assets.resS",
         "Library/PlayerDataCache/Win642/Data/sharedassets2.assets",
+        "Library/PlayerDataCache/Win642/Data/sharedassets2.assets.resS",
         "C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AMDModule.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ARModule.dll",
@@ -1547,6 +1607,9 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
         2,
         2,
         2,
@@ -1590,10 +1653,10 @@
         0
       ],
       "ToBuildDependencies": [
-        18
+        21
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 19
+      "DebugActionIndex": 22
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/boot.config",
@@ -1612,15 +1675,15 @@
         2
       ],
       "ToBuildDependencies": [
-        19
+        22
       ],
-      "DebugActionIndex": 20
+      "DebugActionIndex": 23
     },
     {
       "Annotation": "WriteResponseFile Library/Bee/artifacts/rsp/9092208687115199031.rsp",
       "DisplayName": "Writing 9092208687115199031.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 53547,
+      "PayloadOffset": 53723,
       "PayloadLength": 77456,
       "PayloadDebugContentSnippet": "--allowed-assembly=\"C:/Program",
       "Inputs": [],
@@ -1631,7 +1694,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 21
+      "DebugActionIndex": 24
     },
     {
       "Annotation": "UnityLinker C:/Users/james/OneDrive/Documents/GitHub/Games-CW-1/Games CW1/Library/Bee/artifacts/unitylinker_dwek.traceevents",
@@ -2933,7 +2996,7 @@
         0
       ],
       "ToBuildDependencies": [
-        21
+        24
       ],
       "AllowUnexpectedOutput": true,
       "GlobSignatures": [
@@ -2958,7 +3021,7 @@
           "Recurse": 1
         }
       ],
-      "DebugActionIndex": 22
+      "DebugActionIndex": 25
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Assembly-CSharp.dll",
@@ -2977,9 +3040,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 23
+      "DebugActionIndex": 26
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Mono.Security.dll",
@@ -2998,9 +3061,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 24
+      "DebugActionIndex": 27
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/mscorlib.dll",
@@ -3019,9 +3082,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 25
+      "DebugActionIndex": 28
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/netstandard.dll",
@@ -3040,9 +3103,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 26
+      "DebugActionIndex": 29
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.ComponentModel.Composition.dll",
@@ -3061,9 +3124,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 27
+      "DebugActionIndex": 30
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Configuration.dll",
@@ -3082,9 +3145,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 28
+      "DebugActionIndex": 31
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Core.dll",
@@ -3103,9 +3166,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 29
+      "DebugActionIndex": 32
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -3124,9 +3187,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 30
+      "DebugActionIndex": 33
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Data.dll",
@@ -3145,9 +3208,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 31
+      "DebugActionIndex": 34
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.dll",
@@ -3166,9 +3229,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 32
+      "DebugActionIndex": 35
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Drawing.dll",
@@ -3187,9 +3250,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 33
+      "DebugActionIndex": 36
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.EnterpriseServices.dll",
@@ -3208,9 +3271,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 34
+      "DebugActionIndex": 37
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.IO.Compression.dll",
@@ -3229,9 +3292,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 35
+      "DebugActionIndex": 38
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -3250,9 +3313,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 36
+      "DebugActionIndex": 39
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Net.Http.dll",
@@ -3271,9 +3334,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 37
+      "DebugActionIndex": 40
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Numerics.dll",
@@ -3292,9 +3355,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 38
+      "DebugActionIndex": 41
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Runtime.Serialization.dll",
@@ -3313,9 +3376,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 39
+      "DebugActionIndex": 42
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Security.dll",
@@ -3334,9 +3397,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 40
+      "DebugActionIndex": 43
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.ServiceModel.Internals.dll",
@@ -3355,9 +3418,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 41
+      "DebugActionIndex": 44
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Transactions.dll",
@@ -3376,9 +3439,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 42
+      "DebugActionIndex": 45
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Xml.dll",
@@ -3397,9 +3460,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 43
+      "DebugActionIndex": 46
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/System.Xml.Linq.dll",
@@ -3418,9 +3481,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 44
+      "DebugActionIndex": 47
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Unity.AI.Navigation.dll",
@@ -3439,9 +3502,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 45
+      "DebugActionIndex": 48
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Unity.InputSystem.dll",
@@ -3460,9 +3523,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 46
+      "DebugActionIndex": 49
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Unity.InputSystem.ForUI.dll",
@@ -3481,9 +3544,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 47
+      "DebugActionIndex": 50
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Unity.Multiplayer.Center.Common.dll",
@@ -3502,9 +3565,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 48
+      "DebugActionIndex": 51
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Unity.TextMeshPro.dll",
@@ -3523,9 +3586,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 49
+      "DebugActionIndex": 52
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Unity.Timeline.dll",
@@ -3544,9 +3607,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 50
+      "DebugActionIndex": 53
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -3565,9 +3628,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 51
+      "DebugActionIndex": 54
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Unity.VisualScripting.Core.dll",
@@ -3586,9 +3649,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 52
+      "DebugActionIndex": 55
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Unity.VisualScripting.DocCodeExamples.dll",
@@ -3607,9 +3670,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 53
+      "DebugActionIndex": 56
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Unity.VisualScripting.Flow.dll",
@@ -3628,9 +3691,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 54
+      "DebugActionIndex": 57
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/Unity.VisualScripting.State.dll",
@@ -3649,9 +3712,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 55
+      "DebugActionIndex": 58
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.AccessibilityModule.dll",
@@ -3670,9 +3733,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 56
+      "DebugActionIndex": 59
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.AIModule.dll",
@@ -3691,9 +3754,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 57
+      "DebugActionIndex": 60
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.AMDModule.dll",
@@ -3712,9 +3775,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 58
+      "DebugActionIndex": 61
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -3733,9 +3796,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 59
+      "DebugActionIndex": 62
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.AnimationModule.dll",
@@ -3754,9 +3817,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 60
+      "DebugActionIndex": 63
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.ARModule.dll",
@@ -3775,9 +3838,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 61
+      "DebugActionIndex": 64
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.AssetBundleModule.dll",
@@ -3796,9 +3859,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 62
+      "DebugActionIndex": 65
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.AudioModule.dll",
@@ -3817,9 +3880,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 63
+      "DebugActionIndex": 66
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.ClothModule.dll",
@@ -3838,9 +3901,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 64
+      "DebugActionIndex": 67
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.ClusterInputModule.dll",
@@ -3859,9 +3922,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 65
+      "DebugActionIndex": 68
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.ClusterRendererModule.dll",
@@ -3880,9 +3943,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 66
+      "DebugActionIndex": 69
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.ContentLoadModule.dll",
@@ -3901,9 +3964,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 67
+      "DebugActionIndex": 70
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.CoreModule.dll",
@@ -3922,9 +3985,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 68
+      "DebugActionIndex": 71
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.CrashReportingModule.dll",
@@ -3943,9 +4006,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 69
+      "DebugActionIndex": 72
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.DirectorModule.dll",
@@ -3964,9 +4027,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 70
+      "DebugActionIndex": 73
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.dll",
@@ -3985,9 +4048,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 71
+      "DebugActionIndex": 74
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.DSPGraphModule.dll",
@@ -4006,9 +4069,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 72
+      "DebugActionIndex": 75
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.GameCenterModule.dll",
@@ -4027,9 +4090,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 73
+      "DebugActionIndex": 76
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.GIModule.dll",
@@ -4048,9 +4111,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 74
+      "DebugActionIndex": 77
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
@@ -4069,9 +4132,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 75
+      "DebugActionIndex": 78
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.GridModule.dll",
@@ -4090,9 +4153,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 76
+      "DebugActionIndex": 79
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.HierarchyCoreModule.dll",
@@ -4111,9 +4174,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 77
+      "DebugActionIndex": 80
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.HotReloadModule.dll",
@@ -4132,9 +4195,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 78
+      "DebugActionIndex": 81
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.IdentifiersModule.dll",
@@ -4153,9 +4216,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 79
+      "DebugActionIndex": 82
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.ImageConversionModule.dll",
@@ -4174,9 +4237,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 80
+      "DebugActionIndex": 83
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.IMGUIModule.dll",
@@ -4195,9 +4258,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 81
+      "DebugActionIndex": 84
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.InputForUIModule.dll",
@@ -4216,9 +4279,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 82
+      "DebugActionIndex": 85
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.InputLegacyModule.dll",
@@ -4237,9 +4300,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 83
+      "DebugActionIndex": 86
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.InputModule.dll",
@@ -4258,9 +4321,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 84
+      "DebugActionIndex": 87
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.InsightsModule.dll",
@@ -4279,9 +4342,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 85
+      "DebugActionIndex": 88
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.JSONSerializeModule.dll",
@@ -4300,9 +4363,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 86
+      "DebugActionIndex": 89
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.LocalizationModule.dll",
@@ -4321,9 +4384,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 87
+      "DebugActionIndex": 90
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.MarshallingModule.dll",
@@ -4342,9 +4405,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 88
+      "DebugActionIndex": 91
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.MultiplayerModule.dll",
@@ -4363,9 +4426,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 89
+      "DebugActionIndex": 92
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.NVIDIAModule.dll",
@@ -4384,9 +4447,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 90
+      "DebugActionIndex": 93
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.ParticleSystemModule.dll",
@@ -4405,9 +4468,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 91
+      "DebugActionIndex": 94
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
@@ -4426,9 +4489,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 92
+      "DebugActionIndex": 95
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.Physics2DModule.dll",
@@ -4447,9 +4510,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 93
+      "DebugActionIndex": 96
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.PhysicsModule.dll",
@@ -4468,9 +4531,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 94
+      "DebugActionIndex": 97
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.PropertiesModule.dll",
@@ -4489,9 +4552,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 95
+      "DebugActionIndex": 98
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
@@ -4510,9 +4573,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 96
+      "DebugActionIndex": 99
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
@@ -4531,9 +4594,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 97
+      "DebugActionIndex": 100
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll",
@@ -4552,9 +4615,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 98
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -4573,9 +4636,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 99
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.SpriteMaskModule.dll",
@@ -4594,9 +4657,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 100
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -4615,9 +4678,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 101
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.StreamingModule.dll",
@@ -4636,9 +4699,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.SubstanceModule.dll",
@@ -4657,9 +4720,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.SubsystemsModule.dll",
@@ -4678,9 +4741,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.TerrainModule.dll",
@@ -4699,9 +4762,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
@@ -4720,9 +4783,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -4741,9 +4804,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -4762,9 +4825,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.TextRenderingModule.dll",
@@ -4783,9 +4846,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.TilemapModule.dll",
@@ -4804,9 +4867,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.TLSModule.dll",
@@ -4825,9 +4888,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UI.dll",
@@ -4846,9 +4909,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UIElementsModule.dll",
@@ -4867,9 +4930,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UIModule.dll",
@@ -4888,9 +4951,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UmbraModule.dll",
@@ -4909,9 +4972,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
@@ -4930,9 +4993,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
@@ -4951,9 +5014,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UnityConnectModule.dll",
@@ -4972,9 +5035,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UnityConsentModule.dll",
@@ -4993,9 +5056,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UnityCurlModule.dll",
@@ -5014,9 +5077,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UnityTestProtocolModule.dll",
@@ -5035,9 +5098,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
@@ -5056,9 +5119,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
@@ -5077,9 +5140,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
@@ -5098,9 +5161,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
@@ -5119,9 +5182,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
@@ -5140,9 +5203,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.VehiclesModule.dll",
@@ -5161,9 +5224,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.VFXModule.dll",
@@ -5182,9 +5245,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.VideoModule.dll",
@@ -5203,9 +5266,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
@@ -5224,9 +5287,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.VRModule.dll",
@@ -5245,9 +5308,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.WindModule.dll",
@@ -5266,9 +5329,9 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Managed/UnityEngine.XRModule.dll",
@@ -5287,15 +5350,15 @@
         2
       ],
       "ToBuildDependencies": [
-        22
+        25
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Assembly-CSharp-FeaturesChecked.txt_w20p.info",
       "DisplayName": "Writing Assembly-CSharp-FeaturesChecked.txt_w20p.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 131116,
+      "PayloadOffset": 131292,
       "PayloadLength": 656,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -5306,7 +5369,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Assembly-CSharp-FeaturesChecked.txt",
@@ -5397,8 +5460,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        134
+        25,
+        137
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -5411,13 +5474,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Assembly-CSharp-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Mono.Security-FeaturesChecked.txt_dyiy.info",
       "DisplayName": "Writing Mono.Security-FeaturesChecked.txt_dyiy.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 131883,
+      "PayloadOffset": 132059,
       "PayloadLength": 652,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -5428,7 +5491,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Mono.Security-FeaturesChecked.txt",
@@ -5519,8 +5582,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        136
+        25,
+        139
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -5533,13 +5596,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Mono.Security-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/mscorlib-FeaturesChecked.txt_9kc9.info",
       "DisplayName": "Writing mscorlib-FeaturesChecked.txt_9kc9.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 132641,
+      "PayloadOffset": 132817,
       "PayloadLength": 642,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -5550,7 +5613,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/mscorlib-FeaturesChecked.txt",
@@ -5641,8 +5704,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        138
+        25,
+        141
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -5655,13 +5718,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/mscorlib-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/netstandard-FeaturesChecked.txt_0cit.info",
       "DisplayName": "Writing netstandard-FeaturesChecked.txt_0cit.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 133392,
+      "PayloadOffset": 133568,
       "PayloadLength": 648,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -5672,7 +5735,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/netstandard-FeaturesChecked.txt",
@@ -5763,8 +5826,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        140
+        25,
+        143
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -5777,13 +5840,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/netstandard-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.ComponentModel.Composition-FeaturesChecked.txt_91q2.info",
       "DisplayName": "Writing System.ComponentModel.Composition-FeaturesChecked.txt_91q2.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 134171,
+      "PayloadOffset": 134347,
       "PayloadLength": 692,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -5794,7 +5857,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.ComponentModel.Composition-FeaturesChecked.txt",
@@ -5885,8 +5948,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        142
+        25,
+        145
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -5899,13 +5962,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.ComponentModel.Composition-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 143
+      "DebugActionIndex": 146
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Configuration-FeaturesChecked.txt_nqsf.info",
       "DisplayName": "Writing System.Configuration-FeaturesChecked.txt_nqsf.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 134981,
+      "PayloadOffset": 135157,
       "PayloadLength": 666,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -5916,7 +5979,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 144
+      "DebugActionIndex": 147
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Configuration-FeaturesChecked.txt",
@@ -6007,8 +6070,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        144
+        25,
+        147
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -6021,13 +6084,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Configuration-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 145
+      "DebugActionIndex": 148
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Core-FeaturesChecked.txt_och0.info",
       "DisplayName": "Writing System.Core-FeaturesChecked.txt_och0.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 135756,
+      "PayloadOffset": 135932,
       "PayloadLength": 648,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -6038,7 +6101,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 146
+      "DebugActionIndex": 149
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Core-FeaturesChecked.txt",
@@ -6129,8 +6192,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        146
+        25,
+        149
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -6143,13 +6206,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Core-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 147
+      "DebugActionIndex": 150
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Data.DataSetExtensions-FeaturesChecked.txt_pams.info",
       "DisplayName": "Writing System.Data.DataSetExtensions-FeaturesChecked.txt_pams.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 136531,
+      "PayloadOffset": 136707,
       "PayloadLength": 684,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -6160,7 +6223,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 148
+      "DebugActionIndex": 151
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Data.DataSetExtensions-FeaturesChecked.txt",
@@ -6251,8 +6314,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        148
+        25,
+        151
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -6265,13 +6328,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Data.DataSetExtensions-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 149
+      "DebugActionIndex": 152
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Data-FeaturesChecked.txt_vhp1.info",
       "DisplayName": "Writing System.Data-FeaturesChecked.txt_vhp1.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 137324,
+      "PayloadOffset": 137500,
       "PayloadLength": 648,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -6282,7 +6345,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 150
+      "DebugActionIndex": 153
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Data-FeaturesChecked.txt",
@@ -6373,8 +6436,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        150
+        25,
+        153
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -6387,13 +6450,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Data-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 151
+      "DebugActionIndex": 154
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System-FeaturesChecked.txt_vic3.info",
       "DisplayName": "Writing System-FeaturesChecked.txt_vic3.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 138076,
+      "PayloadOffset": 138252,
       "PayloadLength": 638,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -6404,7 +6467,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 152
+      "DebugActionIndex": 155
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System-FeaturesChecked.txt",
@@ -6495,8 +6558,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        152
+        25,
+        155
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -6509,13 +6572,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 153
+      "DebugActionIndex": 156
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Drawing-FeaturesChecked.txt_vy29.info",
       "DisplayName": "Writing System.Drawing-FeaturesChecked.txt_vy29.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 138826,
+      "PayloadOffset": 139002,
       "PayloadLength": 654,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -6526,7 +6589,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 154
+      "DebugActionIndex": 157
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Drawing-FeaturesChecked.txt",
@@ -6617,8 +6680,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        154
+        25,
+        157
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -6631,13 +6694,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Drawing-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 155
+      "DebugActionIndex": 158
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.EnterpriseServices-FeaturesChecked.txt_kt5q.info",
       "DisplayName": "Writing System.EnterpriseServices-FeaturesChecked.txt_kt5q.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 139603,
+      "PayloadOffset": 139779,
       "PayloadLength": 676,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -6648,7 +6711,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 156
+      "DebugActionIndex": 159
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.EnterpriseServices-FeaturesChecked.txt",
@@ -6739,8 +6802,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        156
+        25,
+        159
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -6753,13 +6816,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.EnterpriseServices-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 157
+      "DebugActionIndex": 160
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.IO.Compression-FeaturesChecked.txt_f62v.info",
       "DisplayName": "Writing System.IO.Compression-FeaturesChecked.txt_f62v.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 140398,
+      "PayloadOffset": 140574,
       "PayloadLength": 668,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -6770,7 +6833,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 158
+      "DebugActionIndex": 161
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.IO.Compression-FeaturesChecked.txt",
@@ -6861,8 +6924,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        158
+        25,
+        161
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -6875,13 +6938,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.IO.Compression-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 159
+      "DebugActionIndex": 162
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.IO.Compression.FileSystem-FeaturesChecked.txt_caef.info",
       "DisplayName": "Writing System.IO.Compression.FileSystem-FeaturesChecked.txt_caef.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 141196,
+      "PayloadOffset": 141372,
       "PayloadLength": 690,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -6892,7 +6955,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 160
+      "DebugActionIndex": 163
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.IO.Compression.FileSystem-FeaturesChecked.txt",
@@ -6983,8 +7046,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        160
+        25,
+        163
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -6997,13 +7060,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.IO.Compression.FileSystem-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 161
+      "DebugActionIndex": 164
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Net.Http-FeaturesChecked.txt_iku7.info",
       "DisplayName": "Writing System.Net.Http-FeaturesChecked.txt_iku7.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 141999,
+      "PayloadOffset": 142175,
       "PayloadLength": 656,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -7014,7 +7077,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 162
+      "DebugActionIndex": 165
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Net.Http-FeaturesChecked.txt",
@@ -7105,8 +7168,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        162
+        25,
+        165
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -7119,13 +7182,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Net.Http-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 163
+      "DebugActionIndex": 166
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Numerics-FeaturesChecked.txt_bd3w.info",
       "DisplayName": "Writing System.Numerics-FeaturesChecked.txt_bd3w.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 142768,
+      "PayloadOffset": 142944,
       "PayloadLength": 656,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -7136,7 +7199,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 164
+      "DebugActionIndex": 167
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Numerics-FeaturesChecked.txt",
@@ -7227,8 +7290,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        164
+        25,
+        167
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -7241,13 +7304,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Numerics-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 165
+      "DebugActionIndex": 168
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Runtime.Serialization-FeaturesChecked.txt_37nq.info",
       "DisplayName": "Writing System.Runtime.Serialization-FeaturesChecked.txt_37nq.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 143550,
+      "PayloadOffset": 143726,
       "PayloadLength": 682,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -7258,7 +7321,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 166
+      "DebugActionIndex": 169
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Runtime.Serialization-FeaturesChecked.txt",
@@ -7349,8 +7412,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        166
+        25,
+        169
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -7363,13 +7426,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Runtime.Serialization-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 167
+      "DebugActionIndex": 170
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Security-FeaturesChecked.txt_1xux.info",
       "DisplayName": "Writing System.Security-FeaturesChecked.txt_1xux.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 144345,
+      "PayloadOffset": 144521,
       "PayloadLength": 656,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -7380,7 +7443,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 168
+      "DebugActionIndex": 171
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Security-FeaturesChecked.txt",
@@ -7471,8 +7534,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        168
+        25,
+        171
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -7485,13 +7548,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Security-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 169
+      "DebugActionIndex": 172
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.ServiceModel.Internals-FeaturesChecked.txt_hhne.info",
       "DisplayName": "Writing System.ServiceModel.Internals-FeaturesChecked.txt_hhne.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 145128,
+      "PayloadOffset": 145304,
       "PayloadLength": 684,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -7502,7 +7565,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 170
+      "DebugActionIndex": 173
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.ServiceModel.Internals-FeaturesChecked.txt",
@@ -7593,8 +7656,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        170
+        25,
+        173
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -7607,13 +7670,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.ServiceModel.Internals-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 171
+      "DebugActionIndex": 174
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Transactions-FeaturesChecked.txt_ugsj.info",
       "DisplayName": "Writing System.Transactions-FeaturesChecked.txt_ugsj.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 145929,
+      "PayloadOffset": 146105,
       "PayloadLength": 664,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -7624,7 +7687,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 172
+      "DebugActionIndex": 175
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Transactions-FeaturesChecked.txt",
@@ -7715,8 +7778,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        172
+        25,
+        175
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -7729,13 +7792,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Transactions-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 173
+      "DebugActionIndex": 176
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Xml-FeaturesChecked.txt_wcjl.info",
       "DisplayName": "Writing System.Xml-FeaturesChecked.txt_wcjl.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 146701,
+      "PayloadOffset": 146877,
       "PayloadLength": 646,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -7746,7 +7809,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 174
+      "DebugActionIndex": 177
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Xml-FeaturesChecked.txt",
@@ -7837,8 +7900,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        174
+        25,
+        177
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -7851,13 +7914,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Xml-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 175
+      "DebugActionIndex": 178
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/System.Xml.Linq-FeaturesChecked.txt_s1tc.info",
       "DisplayName": "Writing System.Xml.Linq-FeaturesChecked.txt_s1tc.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 147460,
+      "PayloadOffset": 147636,
       "PayloadLength": 656,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -7868,7 +7931,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 176
+      "DebugActionIndex": 179
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Xml.Linq-FeaturesChecked.txt",
@@ -7959,8 +8022,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        176
+        25,
+        179
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -7973,13 +8036,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/System.Xml.Linq-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 177
+      "DebugActionIndex": 180
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Unity.AI.Navigation-FeaturesChecked.txt_nx8f.info",
       "DisplayName": "Writing Unity.AI.Navigation-FeaturesChecked.txt_nx8f.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 148233,
+      "PayloadOffset": 148409,
       "PayloadLength": 664,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -7990,7 +8053,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 178
+      "DebugActionIndex": 181
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.AI.Navigation-FeaturesChecked.txt",
@@ -8081,8 +8144,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        178
+        25,
+        181
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -8095,13 +8158,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.AI.Navigation-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 179
+      "DebugActionIndex": 182
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Unity.InputSystem-FeaturesChecked.txt_ymdi.info",
       "DisplayName": "Writing Unity.InputSystem-FeaturesChecked.txt_ymdi.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 149012,
+      "PayloadOffset": 149188,
       "PayloadLength": 660,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -8112,7 +8175,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 180
+      "DebugActionIndex": 183
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.InputSystem-FeaturesChecked.txt",
@@ -8203,8 +8266,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        180
+        25,
+        183
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -8217,13 +8280,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.InputSystem-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 181
+      "DebugActionIndex": 184
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Unity.InputSystem.ForUI-FeaturesChecked.txt_58gu.info",
       "DisplayName": "Writing Unity.InputSystem.ForUI-FeaturesChecked.txt_58gu.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 149793,
+      "PayloadOffset": 149969,
       "PayloadLength": 672,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -8234,7 +8297,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 182
+      "DebugActionIndex": 185
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.InputSystem.ForUI-FeaturesChecked.txt",
@@ -8325,8 +8388,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        182
+        25,
+        185
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -8339,13 +8402,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.InputSystem.ForUI-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 183
+      "DebugActionIndex": 186
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Unity.Multiplayer.Center.Common-FeaturesChecked.txt_h48p.info",
       "DisplayName": "Writing Unity.Multiplayer.Center.Common-FeaturesChecked.txt_h48p.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 150594,
+      "PayloadOffset": 150770,
       "PayloadLength": 688,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -8356,7 +8419,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 184
+      "DebugActionIndex": 187
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.Multiplayer.Center.Common-FeaturesChecked.txt",
@@ -8447,8 +8510,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        184
+        25,
+        187
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -8461,13 +8524,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.Multiplayer.Center.Common-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 185
+      "DebugActionIndex": 188
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Unity.TextMeshPro-FeaturesChecked.txt_syok.info",
       "DisplayName": "Writing Unity.TextMeshPro-FeaturesChecked.txt_syok.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 151397,
+      "PayloadOffset": 151573,
       "PayloadLength": 660,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -8478,7 +8541,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 186
+      "DebugActionIndex": 189
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.TextMeshPro-FeaturesChecked.txt",
@@ -8569,8 +8632,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        186
+        25,
+        189
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -8583,13 +8646,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.TextMeshPro-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 187
+      "DebugActionIndex": 190
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Unity.Timeline-FeaturesChecked.txt_ygu9.info",
       "DisplayName": "Writing Unity.Timeline-FeaturesChecked.txt_ygu9.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 152169,
+      "PayloadOffset": 152345,
       "PayloadLength": 654,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -8600,7 +8663,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 188
+      "DebugActionIndex": 191
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.Timeline-FeaturesChecked.txt",
@@ -8691,8 +8754,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        188
+        25,
+        191
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -8705,13 +8768,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.Timeline-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 189
+      "DebugActionIndex": 192
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Unity.VisualScripting.Antlr3.Runtime-FeaturesChecked.txt_o8bf.info",
       "DisplayName": "Writing Unity.VisualScripting.Antlr3.Runtime-FeaturesChecked.txt_o8bf.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 152957,
+      "PayloadOffset": 153133,
       "PayloadLength": 698,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -8722,7 +8785,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 190
+      "DebugActionIndex": 193
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.Antlr3.Runtime-FeaturesChecked.txt",
@@ -8813,8 +8876,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        190
+        25,
+        193
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -8827,13 +8890,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.Antlr3.Runtime-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 191
+      "DebugActionIndex": 194
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Unity.VisualScripting.Core-FeaturesChecked.txt_bnmf.info",
       "DisplayName": "Writing Unity.VisualScripting.Core-FeaturesChecked.txt_bnmf.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 153779,
+      "PayloadOffset": 153955,
       "PayloadLength": 678,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -8844,7 +8907,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 192
+      "DebugActionIndex": 195
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.Core-FeaturesChecked.txt",
@@ -8935,8 +8998,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        192
+        25,
+        195
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -8949,13 +9012,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.Core-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 193
+      "DebugActionIndex": 196
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Unity.VisualScripting.DocCodeExamples-FeaturesChecked.txt_o48l.info",
       "DisplayName": "Writing Unity.VisualScripting.DocCodeExamples-FeaturesChecked.txt_o48l.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 154592,
+      "PayloadOffset": 154768,
       "PayloadLength": 700,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -8966,7 +9029,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 194
+      "DebugActionIndex": 197
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.DocCodeExamples-FeaturesChecked.txt",
@@ -9057,8 +9120,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        194
+        25,
+        197
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -9071,13 +9134,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.DocCodeExamples-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 195
+      "DebugActionIndex": 198
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Unity.VisualScripting.Flow-FeaturesChecked.txt_m429.info",
       "DisplayName": "Writing Unity.VisualScripting.Flow-FeaturesChecked.txt_m429.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 155416,
+      "PayloadOffset": 155592,
       "PayloadLength": 678,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -9088,7 +9151,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 196
+      "DebugActionIndex": 199
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.Flow-FeaturesChecked.txt",
@@ -9179,8 +9242,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        196
+        25,
+        199
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -9193,13 +9256,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.Flow-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 197
+      "DebugActionIndex": 200
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Unity.VisualScripting.State-FeaturesChecked.txt_70xz.info",
       "DisplayName": "Writing Unity.VisualScripting.State-FeaturesChecked.txt_70xz.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 156219,
+      "PayloadOffset": 156395,
       "PayloadLength": 680,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -9210,7 +9273,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 198
+      "DebugActionIndex": 201
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.State-FeaturesChecked.txt",
@@ -9301,8 +9364,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        198
+        25,
+        201
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -9315,13 +9378,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/Unity.VisualScripting.State-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 199
+      "DebugActionIndex": 202
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.AccessibilityModule-FeaturesChecked.txt_tops.info",
       "DisplayName": "Writing UnityEngine.AccessibilityModule-FeaturesChecked.txt_tops.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 157028,
+      "PayloadOffset": 157204,
       "PayloadLength": 688,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -9332,7 +9395,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 200
+      "DebugActionIndex": 203
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AccessibilityModule-FeaturesChecked.txt",
@@ -9423,8 +9486,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        200
+        25,
+        203
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -9437,13 +9500,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AccessibilityModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 201
+      "DebugActionIndex": 204
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.AIModule-FeaturesChecked.txt_b24d.info",
       "DisplayName": "Writing UnityEngine.AIModule-FeaturesChecked.txt_b24d.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 157834,
+      "PayloadOffset": 158010,
       "PayloadLength": 666,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -9454,7 +9517,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 202
+      "DebugActionIndex": 205
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AIModule-FeaturesChecked.txt",
@@ -9545,8 +9608,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        202
+        25,
+        205
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -9559,13 +9622,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AIModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 203
+      "DebugActionIndex": 206
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.AMDModule-FeaturesChecked.txt_v240.info",
       "DisplayName": "Writing UnityEngine.AMDModule-FeaturesChecked.txt_v240.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 158619,
+      "PayloadOffset": 158795,
       "PayloadLength": 668,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -9576,7 +9639,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 204
+      "DebugActionIndex": 207
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AMDModule-FeaturesChecked.txt",
@@ -9667,8 +9730,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        204
+        25,
+        207
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -9681,13 +9744,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AMDModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 205
+      "DebugActionIndex": 208
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.AndroidJNIModule-FeaturesChecked.txt_p2rr.info",
       "DisplayName": "Writing UnityEngine.AndroidJNIModule-FeaturesChecked.txt_p2rr.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 159413,
+      "PayloadOffset": 159589,
       "PayloadLength": 682,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -9698,7 +9761,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 206
+      "DebugActionIndex": 209
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AndroidJNIModule-FeaturesChecked.txt",
@@ -9789,8 +9852,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        206
+        25,
+        209
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -9803,13 +9866,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AndroidJNIModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 207
+      "DebugActionIndex": 210
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.AnimationModule-FeaturesChecked.txt_ryhl.info",
       "DisplayName": "Writing UnityEngine.AnimationModule-FeaturesChecked.txt_ryhl.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 160220,
+      "PayloadOffset": 160396,
       "PayloadLength": 680,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -9820,7 +9883,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 208
+      "DebugActionIndex": 211
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AnimationModule-FeaturesChecked.txt",
@@ -9911,8 +9974,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        208
+        25,
+        211
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -9925,13 +9988,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AnimationModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 209
+      "DebugActionIndex": 212
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.ARModule-FeaturesChecked.txt_41lh.info",
       "DisplayName": "Writing UnityEngine.ARModule-FeaturesChecked.txt_41lh.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 161018,
+      "PayloadOffset": 161194,
       "PayloadLength": 666,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -9942,7 +10005,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 210
+      "DebugActionIndex": 213
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ARModule-FeaturesChecked.txt",
@@ -10033,8 +10096,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        210
+        25,
+        213
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -10047,13 +10110,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ARModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 211
+      "DebugActionIndex": 214
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.AssetBundleModule-FeaturesChecked.txt_1jdn.info",
       "DisplayName": "Writing UnityEngine.AssetBundleModule-FeaturesChecked.txt_1jdn.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 161811,
+      "PayloadOffset": 161987,
       "PayloadLength": 684,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -10064,7 +10127,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 212
+      "DebugActionIndex": 215
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AssetBundleModule-FeaturesChecked.txt",
@@ -10155,8 +10218,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        212
+        25,
+        215
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -10169,13 +10232,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AssetBundleModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 213
+      "DebugActionIndex": 216
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.AudioModule-FeaturesChecked.txt_dmkb.info",
       "DisplayName": "Writing UnityEngine.AudioModule-FeaturesChecked.txt_dmkb.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 162616,
+      "PayloadOffset": 162792,
       "PayloadLength": 672,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -10186,7 +10249,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 214
+      "DebugActionIndex": 217
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AudioModule-FeaturesChecked.txt",
@@ -10277,8 +10340,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        214
+        25,
+        217
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -10291,13 +10354,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.AudioModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 215
+      "DebugActionIndex": 218
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.ClothModule-FeaturesChecked.txt_df2e.info",
       "DisplayName": "Writing UnityEngine.ClothModule-FeaturesChecked.txt_df2e.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 163409,
+      "PayloadOffset": 163585,
       "PayloadLength": 672,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -10308,7 +10371,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 216
+      "DebugActionIndex": 219
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ClothModule-FeaturesChecked.txt",
@@ -10399,8 +10462,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        216
+        25,
+        219
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -10413,13 +10476,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ClothModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 217
+      "DebugActionIndex": 220
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.ClusterInputModule-FeaturesChecked.txt_frb1.info",
       "DisplayName": "Writing UnityEngine.ClusterInputModule-FeaturesChecked.txt_frb1.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 164209,
+      "PayloadOffset": 164385,
       "PayloadLength": 686,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -10430,7 +10493,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 218
+      "DebugActionIndex": 221
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ClusterInputModule-FeaturesChecked.txt",
@@ -10521,8 +10584,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        218
+        25,
+        221
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -10535,13 +10598,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ClusterInputModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 219
+      "DebugActionIndex": 222
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.ClusterRendererModule-FeaturesChecked.txt_ssow.info",
       "DisplayName": "Writing UnityEngine.ClusterRendererModule-FeaturesChecked.txt_ssow.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 165026,
+      "PayloadOffset": 165202,
       "PayloadLength": 692,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -10552,7 +10615,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 220
+      "DebugActionIndex": 223
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ClusterRendererModule-FeaturesChecked.txt",
@@ -10643,8 +10706,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        220
+        25,
+        223
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -10657,13 +10720,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ClusterRendererModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 221
+      "DebugActionIndex": 224
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.ContentLoadModule-FeaturesChecked.txt_iz9q.info",
       "DisplayName": "Writing UnityEngine.ContentLoadModule-FeaturesChecked.txt_iz9q.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 165845,
+      "PayloadOffset": 166021,
       "PayloadLength": 684,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -10674,7 +10737,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 222
+      "DebugActionIndex": 225
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ContentLoadModule-FeaturesChecked.txt",
@@ -10765,8 +10828,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        222
+        25,
+        225
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -10779,13 +10842,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ContentLoadModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 223
+      "DebugActionIndex": 226
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.CoreModule-FeaturesChecked.txt_ezkd.info",
       "DisplayName": "Writing UnityEngine.CoreModule-FeaturesChecked.txt_ezkd.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 166649,
+      "PayloadOffset": 166825,
       "PayloadLength": 670,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -10796,7 +10859,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 224
+      "DebugActionIndex": 227
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.CoreModule-FeaturesChecked.txt",
@@ -10887,8 +10950,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        224
+        25,
+        227
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -10901,13 +10964,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.CoreModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 225
+      "DebugActionIndex": 228
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.CrashReportingModule-FeaturesChecked.txt_2398.info",
       "DisplayName": "Writing UnityEngine.CrashReportingModule-FeaturesChecked.txt_2398.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 167449,
+      "PayloadOffset": 167625,
       "PayloadLength": 690,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -10918,7 +10981,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 226
+      "DebugActionIndex": 229
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.CrashReportingModule-FeaturesChecked.txt",
@@ -11009,8 +11072,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        226
+        25,
+        229
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -11023,13 +11086,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.CrashReportingModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 227
+      "DebugActionIndex": 230
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.DirectorModule-FeaturesChecked.txt_rfay.info",
       "DisplayName": "Writing UnityEngine.DirectorModule-FeaturesChecked.txt_rfay.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 168263,
+      "PayloadOffset": 168439,
       "PayloadLength": 678,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -11040,7 +11103,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 228
+      "DebugActionIndex": 231
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.DirectorModule-FeaturesChecked.txt",
@@ -11131,8 +11194,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        228
+        25,
+        231
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -11145,13 +11208,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.DirectorModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 229
+      "DebugActionIndex": 232
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine-FeaturesChecked.txt_1bd3.info",
       "DisplayName": "Writing UnityEngine-FeaturesChecked.txt_1bd3.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 169050,
+      "PayloadOffset": 169226,
       "PayloadLength": 648,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -11162,7 +11225,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 230
+      "DebugActionIndex": 233
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine-FeaturesChecked.txt",
@@ -11253,8 +11316,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        230
+        25,
+        233
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -11267,13 +11330,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 231
+      "DebugActionIndex": 234
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.DSPGraphModule-FeaturesChecked.txt_8ndh.info",
       "DisplayName": "Writing UnityEngine.DSPGraphModule-FeaturesChecked.txt_8ndh.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 169822,
+      "PayloadOffset": 169998,
       "PayloadLength": 678,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -11284,7 +11347,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 232
+      "DebugActionIndex": 235
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.DSPGraphModule-FeaturesChecked.txt",
@@ -11375,8 +11438,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        232
+        25,
+        235
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -11389,13 +11452,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.DSPGraphModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 233
+      "DebugActionIndex": 236
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.GameCenterModule-FeaturesChecked.txt_uhhl.info",
       "DisplayName": "Writing UnityEngine.GameCenterModule-FeaturesChecked.txt_uhhl.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 170626,
+      "PayloadOffset": 170802,
       "PayloadLength": 682,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -11406,7 +11469,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 234
+      "DebugActionIndex": 237
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.GameCenterModule-FeaturesChecked.txt",
@@ -11497,8 +11560,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        234
+        25,
+        237
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -11511,13 +11574,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.GameCenterModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 235
+      "DebugActionIndex": 238
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.GIModule-FeaturesChecked.txt_p171.info",
       "DisplayName": "Writing UnityEngine.GIModule-FeaturesChecked.txt_p171.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 171426,
+      "PayloadOffset": 171602,
       "PayloadLength": 666,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -11528,7 +11591,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 236
+      "DebugActionIndex": 239
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.GIModule-FeaturesChecked.txt",
@@ -11619,8 +11682,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        236
+        25,
+        239
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -11633,13 +11696,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.GIModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 237
+      "DebugActionIndex": 240
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.GraphicsStateCollectionSerializerModule-FeaturesChecked.txt_teqg.info",
       "DisplayName": "Writing UnityEngine.GraphicsStateCollectionSerializerModule-FeaturesChecked.txt_teqg.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 172241,
+      "PayloadOffset": 172417,
       "PayloadLength": 728,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -11650,7 +11713,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 238
+      "DebugActionIndex": 241
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.GraphicsStateCollectionSerializerModule-FeaturesChecked.txt",
@@ -11741,8 +11804,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        238
+        25,
+        241
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -11755,13 +11818,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.GraphicsStateCollectionSerializerModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 239
+      "DebugActionIndex": 242
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.GridModule-FeaturesChecked.txt_p67v.info",
       "DisplayName": "Writing UnityEngine.GridModule-FeaturesChecked.txt_p67v.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 173089,
+      "PayloadOffset": 173265,
       "PayloadLength": 670,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -11772,7 +11835,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 240
+      "DebugActionIndex": 243
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.GridModule-FeaturesChecked.txt",
@@ -11863,8 +11926,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        240
+        25,
+        243
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -11877,13 +11940,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.GridModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 241
+      "DebugActionIndex": 244
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.HierarchyCoreModule-FeaturesChecked.txt_rufr.info",
       "DisplayName": "Writing UnityEngine.HierarchyCoreModule-FeaturesChecked.txt_rufr.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 173888,
+      "PayloadOffset": 174064,
       "PayloadLength": 688,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -11894,7 +11957,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 242
+      "DebugActionIndex": 245
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.HierarchyCoreModule-FeaturesChecked.txt",
@@ -11985,8 +12048,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        242
+        25,
+        245
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -11999,13 +12062,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.HierarchyCoreModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 243
+      "DebugActionIndex": 246
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.HotReloadModule-FeaturesChecked.txt_p7t3.info",
       "DisplayName": "Writing UnityEngine.HotReloadModule-FeaturesChecked.txt_p7t3.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 174701,
+      "PayloadOffset": 174877,
       "PayloadLength": 680,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -12016,7 +12079,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 244
+      "DebugActionIndex": 247
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.HotReloadModule-FeaturesChecked.txt",
@@ -12107,8 +12170,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        244
+        25,
+        247
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -12121,13 +12184,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.HotReloadModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 245
+      "DebugActionIndex": 248
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.IdentifiersModule-FeaturesChecked.txt_l52h.info",
       "DisplayName": "Writing UnityEngine.IdentifiersModule-FeaturesChecked.txt_l52h.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 175508,
+      "PayloadOffset": 175684,
       "PayloadLength": 684,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -12138,7 +12201,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 246
+      "DebugActionIndex": 249
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.IdentifiersModule-FeaturesChecked.txt",
@@ -12229,8 +12292,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        246
+        25,
+        249
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -12243,13 +12306,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.IdentifiersModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 247
+      "DebugActionIndex": 250
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.ImageConversionModule-FeaturesChecked.txt_kvxg.info",
       "DisplayName": "Writing UnityEngine.ImageConversionModule-FeaturesChecked.txt_kvxg.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 176323,
+      "PayloadOffset": 176499,
       "PayloadLength": 692,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -12260,7 +12323,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 248
+      "DebugActionIndex": 251
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ImageConversionModule-FeaturesChecked.txt",
@@ -12351,8 +12414,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        248
+        25,
+        251
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -12365,13 +12428,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ImageConversionModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 249
+      "DebugActionIndex": 252
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.IMGUIModule-FeaturesChecked.txt_eqp3.info",
       "DisplayName": "Writing UnityEngine.IMGUIModule-FeaturesChecked.txt_eqp3.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 177136,
+      "PayloadOffset": 177312,
       "PayloadLength": 672,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -12382,7 +12445,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 250
+      "DebugActionIndex": 253
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.IMGUIModule-FeaturesChecked.txt",
@@ -12473,8 +12536,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        250
+        25,
+        253
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -12487,13 +12550,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.IMGUIModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 251
+      "DebugActionIndex": 254
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.InputForUIModule-FeaturesChecked.txt_inc2.info",
       "DisplayName": "Writing UnityEngine.InputForUIModule-FeaturesChecked.txt_inc2.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 177934,
+      "PayloadOffset": 178110,
       "PayloadLength": 682,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -12504,7 +12567,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 252
+      "DebugActionIndex": 255
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InputForUIModule-FeaturesChecked.txt",
@@ -12595,8 +12658,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        252
+        25,
+        255
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -12609,13 +12672,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InputForUIModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 253
+      "DebugActionIndex": 256
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.InputLegacyModule-FeaturesChecked.txt_y8g4.info",
       "DisplayName": "Writing UnityEngine.InputLegacyModule-FeaturesChecked.txt_y8g4.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 178743,
+      "PayloadOffset": 178919,
       "PayloadLength": 684,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -12626,7 +12689,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 254
+      "DebugActionIndex": 257
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InputLegacyModule-FeaturesChecked.txt",
@@ -12717,8 +12780,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        254
+        25,
+        257
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -12731,13 +12794,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InputLegacyModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 255
+      "DebugActionIndex": 258
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.InputModule-FeaturesChecked.txt_hmqk.info",
       "DisplayName": "Writing UnityEngine.InputModule-FeaturesChecked.txt_hmqk.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 179548,
+      "PayloadOffset": 179724,
       "PayloadLength": 672,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -12748,7 +12811,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 256
+      "DebugActionIndex": 259
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InputModule-FeaturesChecked.txt",
@@ -12839,8 +12902,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        256
+        25,
+        259
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -12853,13 +12916,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InputModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 257
+      "DebugActionIndex": 260
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.InsightsModule-FeaturesChecked.txt_ei8i.info",
       "DisplayName": "Writing UnityEngine.InsightsModule-FeaturesChecked.txt_ei8i.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 180344,
+      "PayloadOffset": 180520,
       "PayloadLength": 678,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -12870,7 +12933,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 258
+      "DebugActionIndex": 261
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InsightsModule-FeaturesChecked.txt",
@@ -12961,8 +13024,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        258
+        25,
+        261
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -12975,13 +13038,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.InsightsModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 259
+      "DebugActionIndex": 262
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.JSONSerializeModule-FeaturesChecked.txt_fm7j.info",
       "DisplayName": "Writing UnityEngine.JSONSerializeModule-FeaturesChecked.txt_fm7j.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 181151,
+      "PayloadOffset": 181327,
       "PayloadLength": 688,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -12992,7 +13055,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 260
+      "DebugActionIndex": 263
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.JSONSerializeModule-FeaturesChecked.txt",
@@ -13083,8 +13146,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        260
+        25,
+        263
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -13097,13 +13160,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.JSONSerializeModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 261
+      "DebugActionIndex": 264
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.LocalizationModule-FeaturesChecked.txt_gh92.info",
       "DisplayName": "Writing UnityEngine.LocalizationModule-FeaturesChecked.txt_gh92.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 181967,
+      "PayloadOffset": 182143,
       "PayloadLength": 686,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -13114,7 +13177,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 262
+      "DebugActionIndex": 265
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.LocalizationModule-FeaturesChecked.txt",
@@ -13205,8 +13268,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        262
+        25,
+        265
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -13219,13 +13282,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.LocalizationModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 263
+      "DebugActionIndex": 266
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.MarshallingModule-FeaturesChecked.txt_ru2c.info",
       "DisplayName": "Writing UnityEngine.MarshallingModule-FeaturesChecked.txt_ru2c.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 182780,
+      "PayloadOffset": 182956,
       "PayloadLength": 684,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -13236,7 +13299,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 264
+      "DebugActionIndex": 267
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.MarshallingModule-FeaturesChecked.txt",
@@ -13327,8 +13390,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        264
+        25,
+        267
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -13341,13 +13404,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.MarshallingModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 265
+      "DebugActionIndex": 268
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.MultiplayerModule-FeaturesChecked.txt_d35b.info",
       "DisplayName": "Writing UnityEngine.MultiplayerModule-FeaturesChecked.txt_d35b.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 183591,
+      "PayloadOffset": 183767,
       "PayloadLength": 684,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -13358,7 +13421,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 266
+      "DebugActionIndex": 269
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.MultiplayerModule-FeaturesChecked.txt",
@@ -13449,8 +13512,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        266
+        25,
+        269
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -13463,13 +13526,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.MultiplayerModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 267
+      "DebugActionIndex": 270
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.NVIDIAModule-FeaturesChecked.txt_eiz4.info",
       "DisplayName": "Writing UnityEngine.NVIDIAModule-FeaturesChecked.txt_eiz4.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 184397,
+      "PayloadOffset": 184573,
       "PayloadLength": 674,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -13480,7 +13543,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 268
+      "DebugActionIndex": 271
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.NVIDIAModule-FeaturesChecked.txt",
@@ -13571,8 +13634,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        268
+        25,
+        271
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -13585,13 +13648,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.NVIDIAModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 269
+      "DebugActionIndex": 272
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.ParticleSystemModule-FeaturesChecked.txt_8t4d.info",
       "DisplayName": "Writing UnityEngine.ParticleSystemModule-FeaturesChecked.txt_8t4d.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 185201,
+      "PayloadOffset": 185377,
       "PayloadLength": 690,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -13602,7 +13665,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 270
+      "DebugActionIndex": 273
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ParticleSystemModule-FeaturesChecked.txt",
@@ -13693,8 +13756,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        270
+        25,
+        273
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -13707,13 +13770,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ParticleSystemModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 271
+      "DebugActionIndex": 274
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.PerformanceReportingModule-FeaturesChecked.txt_drqr.info",
       "DisplayName": "Writing UnityEngine.PerformanceReportingModule-FeaturesChecked.txt_drqr.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 186027,
+      "PayloadOffset": 186203,
       "PayloadLength": 702,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -13724,7 +13787,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 272
+      "DebugActionIndex": 275
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.PerformanceReportingModule-FeaturesChecked.txt",
@@ -13815,8 +13878,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        272
+        25,
+        275
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -13829,13 +13892,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.PerformanceReportingModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 273
+      "DebugActionIndex": 276
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.Physics2DModule-FeaturesChecked.txt_cj5q.info",
       "DisplayName": "Writing UnityEngine.Physics2DModule-FeaturesChecked.txt_cj5q.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 186854,
+      "PayloadOffset": 187030,
       "PayloadLength": 680,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -13846,7 +13909,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 274
+      "DebugActionIndex": 277
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.Physics2DModule-FeaturesChecked.txt",
@@ -13937,8 +14000,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        274
+        25,
+        277
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -13951,13 +14014,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.Physics2DModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 275
+      "DebugActionIndex": 278
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.PhysicsModule-FeaturesChecked.txt_2kc2.info",
       "DisplayName": "Writing UnityEngine.PhysicsModule-FeaturesChecked.txt_2kc2.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 187657,
+      "PayloadOffset": 187833,
       "PayloadLength": 676,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -13968,7 +14031,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 276
+      "DebugActionIndex": 279
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.PhysicsModule-FeaturesChecked.txt",
@@ -14059,8 +14122,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        276
+        25,
+        279
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -14073,13 +14136,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.PhysicsModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 277
+      "DebugActionIndex": 280
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.PropertiesModule-FeaturesChecked.txt_e859.info",
       "DisplayName": "Writing UnityEngine.PropertiesModule-FeaturesChecked.txt_e859.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 188459,
+      "PayloadOffset": 188635,
       "PayloadLength": 682,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -14090,7 +14153,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 278
+      "DebugActionIndex": 281
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.PropertiesModule-FeaturesChecked.txt",
@@ -14181,8 +14244,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        278
+        25,
+        281
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -14195,13 +14258,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.PropertiesModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 279
+      "DebugActionIndex": 282
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule-FeaturesChecked.txt_5e3c.info",
       "DisplayName": "Writing UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule-FeaturesChecked.txt_5e3c.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 189298,
+      "PayloadOffset": 189474,
       "PayloadLength": 744,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -14212,7 +14275,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 280
+      "DebugActionIndex": 283
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule-FeaturesChecked.txt",
@@ -14303,8 +14366,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        280
+        25,
+        283
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -14317,13 +14380,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 281
+      "DebugActionIndex": 284
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.ScreenCaptureModule-FeaturesChecked.txt_dnv7.info",
       "DisplayName": "Writing UnityEngine.ScreenCaptureModule-FeaturesChecked.txt_dnv7.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 190171,
+      "PayloadOffset": 190347,
       "PayloadLength": 688,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -14334,7 +14397,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 282
+      "DebugActionIndex": 285
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ScreenCaptureModule-FeaturesChecked.txt",
@@ -14425,8 +14488,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        282
+        25,
+        285
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -14439,13 +14502,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ScreenCaptureModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 283
+      "DebugActionIndex": 286
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.ShaderVariantAnalyticsModule-FeaturesChecked.txt_lj2r.info",
       "DisplayName": "Writing UnityEngine.ShaderVariantAnalyticsModule-FeaturesChecked.txt_lj2r.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 190997,
+      "PayloadOffset": 191173,
       "PayloadLength": 706,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -14456,7 +14519,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 284
+      "DebugActionIndex": 287
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ShaderVariantAnalyticsModule-FeaturesChecked.txt",
@@ -14547,8 +14610,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        284
+        25,
+        287
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -14561,13 +14624,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.ShaderVariantAnalyticsModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 285
+      "DebugActionIndex": 288
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.SharedInternalsModule-FeaturesChecked.txt_0vls.info",
       "DisplayName": "Writing UnityEngine.SharedInternalsModule-FeaturesChecked.txt_0vls.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 191834,
+      "PayloadOffset": 192010,
       "PayloadLength": 692,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -14578,7 +14641,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 286
+      "DebugActionIndex": 289
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SharedInternalsModule-FeaturesChecked.txt",
@@ -14669,8 +14732,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        286
+        25,
+        289
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -14683,13 +14746,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SharedInternalsModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 287
+      "DebugActionIndex": 290
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.SpriteMaskModule-FeaturesChecked.txt_80xg.info",
       "DisplayName": "Writing UnityEngine.SpriteMaskModule-FeaturesChecked.txt_80xg.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 192652,
+      "PayloadOffset": 192828,
       "PayloadLength": 682,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -14700,7 +14763,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 288
+      "DebugActionIndex": 291
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SpriteMaskModule-FeaturesChecked.txt",
@@ -14791,8 +14854,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        288
+        25,
+        291
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -14805,13 +14868,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SpriteMaskModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 289
+      "DebugActionIndex": 292
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.SpriteShapeModule-FeaturesChecked.txt_fn2f.info",
       "DisplayName": "Writing UnityEngine.SpriteShapeModule-FeaturesChecked.txt_fn2f.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 193461,
+      "PayloadOffset": 193637,
       "PayloadLength": 684,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -14822,7 +14885,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 290
+      "DebugActionIndex": 293
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SpriteShapeModule-FeaturesChecked.txt",
@@ -14913,8 +14976,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        290
+        25,
+        293
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -14927,13 +14990,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SpriteShapeModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 291
+      "DebugActionIndex": 294
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.StreamingModule-FeaturesChecked.txt_pydr.info",
       "DisplayName": "Writing UnityEngine.StreamingModule-FeaturesChecked.txt_pydr.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 194270,
+      "PayloadOffset": 194446,
       "PayloadLength": 680,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -14944,7 +15007,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 292
+      "DebugActionIndex": 295
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.StreamingModule-FeaturesChecked.txt",
@@ -15035,8 +15098,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        292
+        25,
+        295
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -15049,13 +15112,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.StreamingModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 293
+      "DebugActionIndex": 296
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.SubstanceModule-FeaturesChecked.txt_rpif.info",
       "DisplayName": "Writing UnityEngine.SubstanceModule-FeaturesChecked.txt_rpif.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 195075,
+      "PayloadOffset": 195251,
       "PayloadLength": 680,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -15066,7 +15129,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 294
+      "DebugActionIndex": 297
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SubstanceModule-FeaturesChecked.txt",
@@ -15157,8 +15220,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        294
+        25,
+        297
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -15171,13 +15234,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SubstanceModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 295
+      "DebugActionIndex": 298
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.SubsystemsModule-FeaturesChecked.txt_nywe.info",
       "DisplayName": "Writing UnityEngine.SubsystemsModule-FeaturesChecked.txt_nywe.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 195881,
+      "PayloadOffset": 196057,
       "PayloadLength": 682,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -15188,7 +15251,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 296
+      "DebugActionIndex": 299
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SubsystemsModule-FeaturesChecked.txt",
@@ -15279,8 +15342,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        296
+        25,
+        299
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -15293,13 +15356,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.SubsystemsModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 297
+      "DebugActionIndex": 300
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.TerrainModule-FeaturesChecked.txt_wxmw.info",
       "DisplayName": "Writing UnityEngine.TerrainModule-FeaturesChecked.txt_wxmw.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 196686,
+      "PayloadOffset": 196862,
       "PayloadLength": 676,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -15310,7 +15373,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 298
+      "DebugActionIndex": 301
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TerrainModule-FeaturesChecked.txt",
@@ -15401,8 +15464,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        298
+        25,
+        301
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -15415,13 +15478,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TerrainModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 299
+      "DebugActionIndex": 302
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.TerrainPhysicsModule-FeaturesChecked.txt_5hsl.info",
       "DisplayName": "Writing UnityEngine.TerrainPhysicsModule-FeaturesChecked.txt_5hsl.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 197492,
+      "PayloadOffset": 197668,
       "PayloadLength": 690,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -15432,7 +15495,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 300
+      "DebugActionIndex": 303
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TerrainPhysicsModule-FeaturesChecked.txt",
@@ -15523,8 +15586,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        300
+        25,
+        303
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -15537,13 +15600,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TerrainPhysicsModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 301
+      "DebugActionIndex": 304
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.TextCoreFontEngineModule-FeaturesChecked.txt_k50w.info",
       "DisplayName": "Writing UnityEngine.TextCoreFontEngineModule-FeaturesChecked.txt_k50w.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 198316,
+      "PayloadOffset": 198492,
       "PayloadLength": 698,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -15554,7 +15617,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 302
+      "DebugActionIndex": 305
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TextCoreFontEngineModule-FeaturesChecked.txt",
@@ -15645,8 +15708,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        302
+        25,
+        305
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -15659,13 +15722,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TextCoreFontEngineModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 303
+      "DebugActionIndex": 306
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.TextCoreTextEngineModule-FeaturesChecked.txt_uyte.info",
       "DisplayName": "Writing UnityEngine.TextCoreTextEngineModule-FeaturesChecked.txt_uyte.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 199148,
+      "PayloadOffset": 199324,
       "PayloadLength": 698,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -15676,7 +15739,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 304
+      "DebugActionIndex": 307
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TextCoreTextEngineModule-FeaturesChecked.txt",
@@ -15767,8 +15830,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        304
+        25,
+        307
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -15781,13 +15844,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TextCoreTextEngineModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 305
+      "DebugActionIndex": 308
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.TextRenderingModule-FeaturesChecked.txt_ibdi.info",
       "DisplayName": "Writing UnityEngine.TextRenderingModule-FeaturesChecked.txt_ibdi.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 199975,
+      "PayloadOffset": 200151,
       "PayloadLength": 688,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -15798,7 +15861,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 306
+      "DebugActionIndex": 309
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TextRenderingModule-FeaturesChecked.txt",
@@ -15889,8 +15952,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        306
+        25,
+        309
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -15903,13 +15966,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TextRenderingModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 307
+      "DebugActionIndex": 310
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.TilemapModule-FeaturesChecked.txt_xb4c.info",
       "DisplayName": "Writing UnityEngine.TilemapModule-FeaturesChecked.txt_xb4c.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 200786,
+      "PayloadOffset": 200962,
       "PayloadLength": 676,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -15920,7 +15983,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 308
+      "DebugActionIndex": 311
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TilemapModule-FeaturesChecked.txt",
@@ -16011,8 +16074,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        308
+        25,
+        311
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -16025,13 +16088,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TilemapModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 309
+      "DebugActionIndex": 312
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.TLSModule-FeaturesChecked.txt_yqwi.info",
       "DisplayName": "Writing UnityEngine.TLSModule-FeaturesChecked.txt_yqwi.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 201581,
+      "PayloadOffset": 201757,
       "PayloadLength": 668,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -16042,7 +16105,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 310
+      "DebugActionIndex": 313
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TLSModule-FeaturesChecked.txt",
@@ -16133,8 +16196,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        310
+        25,
+        313
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -16147,13 +16210,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.TLSModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 311
+      "DebugActionIndex": 314
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UI-FeaturesChecked.txt_buxz.info",
       "DisplayName": "Writing UnityEngine.UI-FeaturesChecked.txt_buxz.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 202361,
+      "PayloadOffset": 202537,
       "PayloadLength": 654,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -16164,7 +16227,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 312
+      "DebugActionIndex": 315
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UI-FeaturesChecked.txt",
@@ -16255,8 +16318,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        312
+        25,
+        315
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -16269,13 +16332,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UI-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 313
+      "DebugActionIndex": 316
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UIElementsModule-FeaturesChecked.txt_28gs.info",
       "DisplayName": "Writing UnityEngine.UIElementsModule-FeaturesChecked.txt_28gs.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 203141,
+      "PayloadOffset": 203317,
       "PayloadLength": 682,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -16286,7 +16349,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 314
+      "DebugActionIndex": 317
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UIElementsModule-FeaturesChecked.txt",
@@ -16377,8 +16440,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        314
+        25,
+        317
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -16391,13 +16454,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UIElementsModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 315
+      "DebugActionIndex": 318
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UIModule-FeaturesChecked.txt_rlwj.info",
       "DisplayName": "Writing UnityEngine.UIModule-FeaturesChecked.txt_rlwj.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 203941,
+      "PayloadOffset": 204117,
       "PayloadLength": 666,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -16408,7 +16471,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 316
+      "DebugActionIndex": 319
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UIModule-FeaturesChecked.txt",
@@ -16499,8 +16562,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        316
+        25,
+        319
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -16513,13 +16576,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UIModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 317
+      "DebugActionIndex": 320
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UmbraModule-FeaturesChecked.txt_cv7q.info",
       "DisplayName": "Writing UnityEngine.UmbraModule-FeaturesChecked.txt_cv7q.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 204728,
+      "PayloadOffset": 204904,
       "PayloadLength": 672,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -16530,7 +16593,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 318
+      "DebugActionIndex": 321
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UmbraModule-FeaturesChecked.txt",
@@ -16621,8 +16684,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        318
+        25,
+        321
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -16635,13 +16698,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UmbraModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 319
+      "DebugActionIndex": 322
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityAnalyticsCommonModule-FeaturesChecked.txt_nc1m.info",
       "DisplayName": "Writing UnityEngine.UnityAnalyticsCommonModule-FeaturesChecked.txt_nc1m.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 205536,
+      "PayloadOffset": 205712,
       "PayloadLength": 702,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -16652,7 +16715,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 320
+      "DebugActionIndex": 323
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityAnalyticsCommonModule-FeaturesChecked.txt",
@@ -16743,8 +16806,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        320
+        25,
+        323
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -16757,13 +16820,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityAnalyticsCommonModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 321
+      "DebugActionIndex": 324
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityAnalyticsModule-FeaturesChecked.txt_gvtj.info",
       "DisplayName": "Writing UnityEngine.UnityAnalyticsModule-FeaturesChecked.txt_gvtj.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 206368,
+      "PayloadOffset": 206544,
       "PayloadLength": 690,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -16774,7 +16837,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 322
+      "DebugActionIndex": 325
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityAnalyticsModule-FeaturesChecked.txt",
@@ -16865,8 +16928,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        322
+        25,
+        325
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -16879,13 +16942,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityAnalyticsModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 323
+      "DebugActionIndex": 326
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityConnectModule-FeaturesChecked.txt_wobe.info",
       "DisplayName": "Writing UnityEngine.UnityConnectModule-FeaturesChecked.txt_wobe.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 207186,
+      "PayloadOffset": 207362,
       "PayloadLength": 686,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -16896,7 +16959,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 324
+      "DebugActionIndex": 327
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityConnectModule-FeaturesChecked.txt",
@@ -16987,8 +17050,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        324
+        25,
+        327
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -17001,13 +17064,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityConnectModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 325
+      "DebugActionIndex": 328
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityConsentModule-FeaturesChecked.txt_s5qy.info",
       "DisplayName": "Writing UnityEngine.UnityConsentModule-FeaturesChecked.txt_s5qy.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 208000,
+      "PayloadOffset": 208176,
       "PayloadLength": 686,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -17018,7 +17081,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 326
+      "DebugActionIndex": 329
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityConsentModule-FeaturesChecked.txt",
@@ -17109,8 +17172,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        326
+        25,
+        329
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -17123,13 +17186,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityConsentModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 327
+      "DebugActionIndex": 330
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityCurlModule-FeaturesChecked.txt_sheb.info",
       "DisplayName": "Writing UnityEngine.UnityCurlModule-FeaturesChecked.txt_sheb.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 208811,
+      "PayloadOffset": 208987,
       "PayloadLength": 680,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -17140,7 +17203,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 328
+      "DebugActionIndex": 331
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityCurlModule-FeaturesChecked.txt",
@@ -17231,8 +17294,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        328
+        25,
+        331
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -17245,13 +17308,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityCurlModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 329
+      "DebugActionIndex": 332
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityTestProtocolModule-FeaturesChecked.txt_6hwq.info",
       "DisplayName": "Writing UnityEngine.UnityTestProtocolModule-FeaturesChecked.txt_6hwq.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 209624,
+      "PayloadOffset": 209800,
       "PayloadLength": 696,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -17262,7 +17325,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 330
+      "DebugActionIndex": 333
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityTestProtocolModule-FeaturesChecked.txt",
@@ -17353,8 +17416,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        330
+        25,
+        333
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -17367,13 +17430,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityTestProtocolModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 331
+      "DebugActionIndex": 334
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityWebRequestAssetBundleModule-FeaturesChecked.txt_5xwn.info",
       "DisplayName": "Writing UnityEngine.UnityWebRequestAssetBundleModule-FeaturesChecked.txt_5xwn.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 210462,
+      "PayloadOffset": 210638,
       "PayloadLength": 714,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -17384,7 +17447,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 332
+      "DebugActionIndex": 335
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestAssetBundleModule-FeaturesChecked.txt",
@@ -17475,8 +17538,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        332
+        25,
+        335
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -17489,13 +17552,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestAssetBundleModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 333
+      "DebugActionIndex": 336
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityWebRequestAudioModule-FeaturesChecked.txt_5ujt.info",
       "DisplayName": "Writing UnityEngine.UnityWebRequestAudioModule-FeaturesChecked.txt_5ujt.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 211312,
+      "PayloadOffset": 211488,
       "PayloadLength": 702,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -17506,7 +17569,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 334
+      "DebugActionIndex": 337
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestAudioModule-FeaturesChecked.txt",
@@ -17597,8 +17660,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        334
+        25,
+        337
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -17611,13 +17674,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestAudioModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 335
+      "DebugActionIndex": 338
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityWebRequestModule-FeaturesChecked.txt_b1wr.info",
       "DisplayName": "Writing UnityEngine.UnityWebRequestModule-FeaturesChecked.txt_b1wr.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 212145,
+      "PayloadOffset": 212321,
       "PayloadLength": 692,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -17628,7 +17691,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 336
+      "DebugActionIndex": 339
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestModule-FeaturesChecked.txt",
@@ -17719,8 +17782,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        336
+        25,
+        339
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -17733,13 +17796,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 337
+      "DebugActionIndex": 340
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityWebRequestTextureModule-FeaturesChecked.txt_y9fk.info",
       "DisplayName": "Writing UnityEngine.UnityWebRequestTextureModule-FeaturesChecked.txt_y9fk.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 212975,
+      "PayloadOffset": 213151,
       "PayloadLength": 706,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -17750,7 +17813,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 338
+      "DebugActionIndex": 341
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestTextureModule-FeaturesChecked.txt",
@@ -17841,8 +17904,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        338
+        25,
+        341
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -17855,13 +17918,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestTextureModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 339
+      "DebugActionIndex": 342
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.UnityWebRequestWWWModule-FeaturesChecked.txt_u1d6.info",
       "DisplayName": "Writing UnityEngine.UnityWebRequestWWWModule-FeaturesChecked.txt_u1d6.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 213815,
+      "PayloadOffset": 213991,
       "PayloadLength": 698,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -17872,7 +17935,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 340
+      "DebugActionIndex": 343
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestWWWModule-FeaturesChecked.txt",
@@ -17963,8 +18026,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        340
+        25,
+        343
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -17977,13 +18040,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.UnityWebRequestWWWModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 341
+      "DebugActionIndex": 344
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.VehiclesModule-FeaturesChecked.txt_qeat.info",
       "DisplayName": "Writing UnityEngine.VehiclesModule-FeaturesChecked.txt_qeat.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 214637,
+      "PayloadOffset": 214813,
       "PayloadLength": 678,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -17994,7 +18057,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 342
+      "DebugActionIndex": 345
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VehiclesModule-FeaturesChecked.txt",
@@ -18085,8 +18148,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        342
+        25,
+        345
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -18099,13 +18162,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VehiclesModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 343
+      "DebugActionIndex": 346
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.VFXModule-FeaturesChecked.txt_7vv1.info",
       "DisplayName": "Writing UnityEngine.VFXModule-FeaturesChecked.txt_7vv1.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 215434,
+      "PayloadOffset": 215610,
       "PayloadLength": 668,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -18116,7 +18179,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 344
+      "DebugActionIndex": 347
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VFXModule-FeaturesChecked.txt",
@@ -18207,8 +18270,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        344
+        25,
+        347
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -18221,13 +18284,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VFXModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 345
+      "DebugActionIndex": 348
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.VideoModule-FeaturesChecked.txt_mt2t.info",
       "DisplayName": "Writing UnityEngine.VideoModule-FeaturesChecked.txt_mt2t.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 216223,
+      "PayloadOffset": 216399,
       "PayloadLength": 672,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -18238,7 +18301,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 346
+      "DebugActionIndex": 349
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VideoModule-FeaturesChecked.txt",
@@ -18329,8 +18392,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        346
+        25,
+        349
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -18343,13 +18406,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VideoModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 347
+      "DebugActionIndex": 350
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.VirtualTexturingModule-FeaturesChecked.txt_s30u.info",
       "DisplayName": "Writing UnityEngine.VirtualTexturingModule-FeaturesChecked.txt_s30u.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 217027,
+      "PayloadOffset": 217203,
       "PayloadLength": 694,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -18360,7 +18423,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 348
+      "DebugActionIndex": 351
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VirtualTexturingModule-FeaturesChecked.txt",
@@ -18451,8 +18514,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        348
+        25,
+        351
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -18465,13 +18528,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VirtualTexturingModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 349
+      "DebugActionIndex": 352
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.VRModule-FeaturesChecked.txt_fad4.info",
       "DisplayName": "Writing UnityEngine.VRModule-FeaturesChecked.txt_fad4.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 217839,
+      "PayloadOffset": 218015,
       "PayloadLength": 666,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -18482,7 +18545,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 350
+      "DebugActionIndex": 353
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VRModule-FeaturesChecked.txt",
@@ -18573,8 +18636,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        350
+        25,
+        353
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -18587,13 +18650,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.VRModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 351
+      "DebugActionIndex": 354
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.WindModule-FeaturesChecked.txt_3z9k.info",
       "DisplayName": "Writing UnityEngine.WindModule-FeaturesChecked.txt_3z9k.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 218625,
+      "PayloadOffset": 218801,
       "PayloadLength": 670,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -18604,7 +18667,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 352
+      "DebugActionIndex": 355
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.WindModule-FeaturesChecked.txt",
@@ -18695,8 +18758,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        352
+        25,
+        355
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -18709,13 +18772,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.WindModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 353
+      "DebugActionIndex": 356
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/UnityEngine.XRModule-FeaturesChecked.txt_pvv9.info",
       "DisplayName": "Writing UnityEngine.XRModule-FeaturesChecked.txt_pvv9.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 219413,
+      "PayloadOffset": 219589,
       "PayloadLength": 666,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Fe",
       "Inputs": [],
@@ -18726,7 +18789,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 354
+      "DebugActionIndex": 357
     },
     {
       "Annotation": "ExtractUsedFeatures Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.XRModule-FeaturesChecked.txt",
@@ -18817,8 +18880,8 @@
         0
       ],
       "ToBuildDependencies": [
-        22,
-        354
+        25,
+        357
       ],
       "AllowUnexpectedOutput": true,
       "FileSignatures": [
@@ -18831,13 +18894,13 @@
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/Features/UnityEngine.XRModule-FeaturesChecked.txt"
         }
       ],
-      "DebugActionIndex": 355
+      "DebugActionIndex": 358
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 220168,
+      "PayloadOffset": 220344,
       "PayloadLength": 24,
       "PayloadDebugContentSnippet": "DefaultCompany\nGames CW1",
       "Inputs": [],
@@ -18848,7 +18911,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 356
+      "DebugActionIndex": 359
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/app.info",
@@ -18867,9 +18930,9 @@
         2
       ],
       "ToBuildDependencies": [
-        356
+        359
       ],
-      "DebugActionIndex": 357
+      "DebugActionIndex": 360
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1_Data/Resources/unity default resources",
@@ -18887,7 +18950,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 358
+      "DebugActionIndex": 361
     },
     {
       "Annotation": "CopyFiles New folder/Games CW1.exe",
@@ -18905,7 +18968,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 359
+      "DebugActionIndex": 362
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -18923,7 +18986,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 360
+      "DebugActionIndex": 363
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -18941,7 +19004,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 361
+      "DebugActionIndex": 364
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -18959,7 +19022,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 362
+      "DebugActionIndex": 365
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -18977,7 +19040,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 363
+      "DebugActionIndex": 366
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -18995,7 +19058,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 364
+      "DebugActionIndex": 367
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -19013,7 +19076,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 365
+      "DebugActionIndex": 368
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -19031,7 +19094,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 366
+      "DebugActionIndex": 369
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -19049,7 +19112,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 367
+      "DebugActionIndex": 370
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -19067,7 +19130,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 368
+      "DebugActionIndex": 371
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -19085,7 +19148,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 369
+      "DebugActionIndex": 372
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -19103,7 +19166,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 370
+      "DebugActionIndex": 373
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -19121,7 +19184,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 371
+      "DebugActionIndex": 374
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -19139,7 +19202,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 372
+      "DebugActionIndex": 375
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -19157,7 +19220,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 373
+      "DebugActionIndex": 376
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -19175,7 +19238,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 374
+      "DebugActionIndex": 377
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -19193,7 +19256,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 375
+      "DebugActionIndex": 378
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -19211,7 +19274,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 376
+      "DebugActionIndex": 379
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -19229,7 +19292,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 377
+      "DebugActionIndex": 380
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/config",
@@ -19247,7 +19310,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 378
+      "DebugActionIndex": 381
     },
     {
       "Annotation": "CopyFiles New folder/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -19265,7 +19328,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 379
+      "DebugActionIndex": 382
     },
     {
       "Annotation": "CopyFiles New folder/UnityCrashHandler64.exe",
@@ -19283,7 +19346,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 380
+      "DebugActionIndex": 383
     },
     {
       "Annotation": "CopyFiles New folder/UnityPlayer.dll",
@@ -19301,7 +19364,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 381
+      "DebugActionIndex": 384
     },
     {
       "Annotation": "CopyFiles New folder/D3D12/D3D12Core.dll",
@@ -19319,7 +19382,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 382
+      "DebugActionIndex": 385
     },
     {
       "Annotation": "Player",
@@ -19346,10 +19409,10 @@
         15,
         16,
         17,
+        18,
+        19,
         20,
         23,
-        24,
-        25,
         26,
         27,
         28,
@@ -19458,120 +19521,120 @@
         131,
         132,
         133,
+        134,
         135,
-        137,
-        139,
-        141,
-        143,
-        145,
-        147,
-        149,
-        151,
-        153,
-        155,
-        157,
-        159,
-        161,
-        163,
-        165,
-        167,
-        169,
-        171,
-        173,
-        175,
-        177,
-        179,
-        181,
-        183,
-        185,
-        187,
-        189,
-        191,
-        193,
-        195,
-        197,
-        199,
-        201,
-        203,
-        205,
-        207,
-        209,
-        211,
-        213,
-        215,
-        217,
-        219,
-        221,
-        223,
-        225,
-        227,
-        229,
-        231,
-        233,
-        235,
-        237,
-        239,
-        241,
-        243,
-        245,
-        247,
-        249,
-        251,
-        253,
-        255,
-        257,
-        259,
-        261,
-        263,
-        265,
-        267,
-        269,
-        271,
-        273,
-        275,
-        277,
-        279,
-        281,
-        283,
-        285,
-        287,
-        289,
-        291,
-        293,
-        295,
-        297,
-        299,
-        301,
-        303,
-        305,
-        307,
-        309,
-        311,
-        313,
-        315,
-        317,
-        319,
-        321,
-        323,
-        325,
-        327,
-        329,
-        331,
-        333,
-        335,
-        337,
-        339,
-        341,
-        343,
-        345,
-        347,
-        349,
-        351,
-        353,
-        355,
-        357,
+        136,
+        138,
+        140,
+        142,
+        144,
+        146,
+        148,
+        150,
+        152,
+        154,
+        156,
+        158,
+        160,
+        162,
+        164,
+        166,
+        168,
+        170,
+        172,
+        174,
+        176,
+        178,
+        180,
+        182,
+        184,
+        186,
+        188,
+        190,
+        192,
+        194,
+        196,
+        198,
+        200,
+        202,
+        204,
+        206,
+        208,
+        210,
+        212,
+        214,
+        216,
+        218,
+        220,
+        222,
+        224,
+        226,
+        228,
+        230,
+        232,
+        234,
+        236,
+        238,
+        240,
+        242,
+        244,
+        246,
+        248,
+        250,
+        252,
+        254,
+        256,
+        258,
+        260,
+        262,
+        264,
+        266,
+        268,
+        270,
+        272,
+        274,
+        276,
+        278,
+        280,
+        282,
+        284,
+        286,
+        288,
+        290,
+        292,
+        294,
+        296,
+        298,
+        300,
+        302,
+        304,
+        306,
+        308,
+        310,
+        312,
+        314,
+        316,
+        318,
+        320,
+        322,
+        324,
+        326,
+        328,
+        330,
+        332,
+        334,
+        336,
+        338,
+        340,
+        342,
+        344,
+        346,
+        348,
+        350,
+        352,
+        354,
+        356,
         358,
-        359,
         360,
         361,
         362,
@@ -19594,9 +19657,12 @@
         379,
         380,
         381,
-        382
+        382,
+        383,
+        384,
+        385
       ],
-      "DebugActionIndex": 383
+      "DebugActionIndex": 386
     }
   ],
   "FileSignatures": [
@@ -19814,7 +19880,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 383
+          "Player": 386
         }
 ,  "DefaultNodes": [
     0

@@ -1,4 +1,3 @@
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -38,7 +37,7 @@ public class UpgradeScript : MonoBehaviour
 
             Time.timeScale = 0;
 
-            mask.rectTransform.Translate(Vector3.right * 1300);
+            mask.rectTransform.Translate(Vector3.right * 3550);
 
             active = true;
         }

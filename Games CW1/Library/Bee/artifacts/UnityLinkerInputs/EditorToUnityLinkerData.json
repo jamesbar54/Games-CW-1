@@ -42,9 +42,9 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -67,9 +67,9 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -106,10 +106,17 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "mouseSensativityScript",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "",
@@ -124,9 +131,9 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -142,9 +149,9 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -211,6 +218,41 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TextMeshProUGUI",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_FontAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_Settings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_SpriteAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_StyleSheet",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "Unity.AI.Navigation.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Unity.AI.Navigation.NavMeshSurface",
@@ -223,9 +265,9 @@
             "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -255,9 +297,9 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -308,9 +350,9 @@
             "fullManagedTypeName": "UnityEngine.AI.NavMeshAgent",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -319,9 +361,9 @@
             "fullManagedTypeName": "UnityEngine.AI.NavMeshData",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -330,9 +372,9 @@
             "fullManagedTypeName": "UnityEngine.AnimationClip",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -341,9 +383,31 @@
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioResource",
+            "fullManagedTypeName": "UnityEngine.Audio.AudioResource",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Stage 1.unity",
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SampleClip",
+            "fullManagedTypeName": "UnityEngine.Audio.AudioResource",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Stage 1.unity",
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -352,9 +416,20 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioClip",
+            "fullManagedTypeName": "UnityEngine.AudioClip",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Stage 1.unity",
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -363,9 +438,20 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioSource",
+            "fullManagedTypeName": "UnityEngine.AudioSource",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Stage 1.unity",
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -374,9 +460,9 @@
             "fullManagedTypeName": "UnityEngine.Avatar",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -385,9 +471,9 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -396,7 +482,7 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scene 3.unity"
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -405,9 +491,9 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -416,9 +502,9 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -427,9 +513,9 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -438,9 +524,9 @@
             "fullManagedTypeName": "UnityEngine.CapsuleCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -449,9 +535,9 @@
             "fullManagedTypeName": "UnityEngine.CharacterController",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -460,9 +546,9 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -471,9 +557,9 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -482,9 +568,9 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -500,9 +586,9 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -511,9 +597,9 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -578,9 +664,9 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -589,9 +675,9 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -600,9 +686,9 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -611,9 +697,9 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -622,9 +708,9 @@
             "fullManagedTypeName": "UnityEngine.MeshCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -633,9 +719,9 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -644,9 +730,9 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -655,9 +741,9 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -666,9 +752,9 @@
             "fullManagedTypeName": "UnityEngine.Motion",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -677,9 +763,9 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -695,9 +781,9 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -706,9 +792,9 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -724,9 +810,9 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -735,9 +821,9 @@
             "fullManagedTypeName": "UnityEngine.Rigidbody",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -746,9 +832,9 @@
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -757,9 +843,9 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -768,9 +854,9 @@
             "fullManagedTypeName": "UnityEngine.SkinnedMeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -778,7 +864,11 @@
             "nativeClass": "Sprite",
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
-            "usedInScenes": []
+            "usedInScenes": [
+                "Assets/Stage 1.unity",
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
+            ]
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
@@ -786,9 +876,9 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -797,9 +887,9 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -808,9 +898,9 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -819,9 +909,9 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scene 3.unity",
                 "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity"
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity"
             ]
         },
         {
@@ -855,6 +945,13 @@
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Mask",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Slider",
             "moduleName": "",
             "usedInScenes": []
@@ -863,6 +960,20 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Text",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UpgradeScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "VolumeChangeScript",
             "moduleName": "",
             "usedInScenes": []
         }

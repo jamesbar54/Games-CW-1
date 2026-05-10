@@ -8,10 +8,13 @@
 		<type fullname="HealScript" preserve="nothing"/>
 		<type fullname="HealthBar" preserve="nothing"/>
 		<type fullname="HealthScript" preserve="nothing"/>
+		<type fullname="mouseSensativityScript" preserve="nothing"/>
 		<type fullname="PauseMenuScript" preserve="nothing"/>
 		<type fullname="PlayerHealth" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
 		<type fullname="SceneChangeScript" preserve="nothing"/>
+		<type fullname="UpgradeScript" preserve="nothing"/>
+		<type fullname="VolumeChangeScript" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.AI.Navigation">
 		<type fullname="Unity.AI.Navigation.NavMeshSurface" preserve="nothing"/>
@@ -25,6 +28,13 @@
 		<type fullname="UnityEngine.InputSystem.PlayerInput" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.RemoteInputPlayerConnection" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.UI.InputSystemUIInputModule" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Unity.TextMeshPro">
+		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
+		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
+		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
+		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
+		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine">
 		<type fullname="UnityEditor.Animations.AnimatorController" preserve="nothing"/>
@@ -42,8 +52,11 @@
 		<type fullname="UnityEngine.AI.NavMeshData" preserve="nothing"/>
 		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
 		<type fullname="UnityEngine.Animator" preserve="nothing"/>
+		<type fullname="UnityEngine.Audio.AudioResource" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioClip" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioSource" preserve="nothing"/>
 		<type fullname="UnityEngine.Avatar" preserve="nothing"/>
 		<type fullname="UnityEngine.Behaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
@@ -88,6 +101,7 @@
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Mask" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Slider" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>
 	</assembly>

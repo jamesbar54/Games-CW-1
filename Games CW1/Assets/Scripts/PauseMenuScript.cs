@@ -1,4 +1,3 @@
-using Palmmedia.ReportGenerator.Core;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,7 +13,7 @@ public class PauseMenuScript : MonoBehaviour
     public Button ERR;
 
     public Mask mask;
-    private float maskMove = -1400;
+    private float maskMove = 3550;
     private bool settingsActive = false;
     public Button backButton;
 
@@ -64,7 +63,7 @@ public class PauseMenuScript : MonoBehaviour
 
         settingsActive = true;
 
-        mask.rectTransform.Translate(Vector3.left * -1400);
+        mask.rectTransform.Translate(Vector3.left * -maskMove);
     }
 
     private void SettingsDeactivate()
@@ -76,7 +75,7 @@ public class PauseMenuScript : MonoBehaviour
 
         settingsActive = false;
 
-        mask.rectTransform.Translate(Vector3.left * 1400);
+        mask.rectTransform.Translate(Vector3.left * maskMove);
     }
 
     private void exitGame()

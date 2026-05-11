@@ -5,14 +5,17 @@ public class GolemThrowScript : MonoBehaviour
     [SerializeField]
     private GameObject noPhysicsRock;
 
-    private float spawnDelay = 0.45f;
+    public ParticleSystem slam;
+
+    private float spawnDelay = 0.35f;
 
     private float destroyDelay = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        //slam = gameObject.GetComponent<ParticleSystem>();
+        slam.Pause();
     }
 
     public void throwRock()
@@ -24,11 +27,15 @@ public class GolemThrowScript : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
 
-        GameObject rock = Instantiate(noPhysicsRock, transform.position + new Vector3(0, -1, 1), transform.rotation, transform);
+        slam.Play();
+
+        GameObject rock = Instantiate(noPhysicsRock, transform.position + new Vector3(0, -0.75f, 1), transform.rotation, transform);
 
         rock.transform.localScale = new Vector3(120,120,120);
 
         yield return new WaitForSeconds(destroyDelay);
+
+        slam.Stop();
 
         Destroy(rock);
     }

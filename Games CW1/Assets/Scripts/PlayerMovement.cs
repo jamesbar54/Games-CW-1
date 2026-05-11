@@ -65,6 +65,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float damage = 10.0f;
 
+    private bool attacking = false;
+
+
 
 
     public void Gravity()
@@ -148,6 +151,31 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("Attacking", false);
             }
         }
+
+
+        if (attacking)
+        {
+            Debug.DrawRay(transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 1f), transform.TransformDirection(Vector3.left), Color.red, 5);
+            Debug.DrawRay(transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left), Color.red, 5);
+            Debug.DrawRay(transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 0.5f), transform.TransformDirection(Vector3.left), Color.red, 5);
+        
+            if(Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left), out hit, 4) || Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 0.5f), transform.TransformDirection(Vector3.left), out hit, 4) || Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY + 0.3f, rayCastZ + 1f), transform.TransformDirection(Vector3.left), out hit, 4))
+            {
+                HealthScript health = hit.collider.GetComponent<HealthScript>();
+
+                if(health != null)
+                {
+                    health.takeDamage(damage);
+                }
+
+                rockScript rock = hit.collider.GetComponent<rockScript>();
+
+                if (rock)
+                {
+                    rock.rebound();
+                }
+            }   
+        }
     }
 
     private void PerformJump()
@@ -190,22 +218,11 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
 
-        if(Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left), out hit, 4) || Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 0.5f), transform.TransformDirection(Vector3.left), out hit, 4))
-        {
-            HealthScript health = hit.collider.GetComponent<HealthScript>();
+        attacking = true;
 
-            if(health != null)
-            {
-                health.takeDamage(damage);
-            }
+        yield return new WaitForSeconds(0.5f);
 
-            rockScript rock = hit.collider.GetComponent<rockScript>();
-
-            if (rock)
-            {
-                rock.rebound();
-            }
-        }       
+        attacking = false;
     }
 
     private void StopDefending()
@@ -222,6 +239,13 @@ public class PlayerMovement : MonoBehaviour
         transform.Rotate(Vector3.up * defendRotate);
 
         animator.SetBool("Running", false);
+
+        StartCoroutine(defendDelay(0.2f));
+    }
+
+    System.Collections.IEnumerator defendDelay(float time)
+    {
+        yield return new WaitForSeconds(time);
 
         defending = true;
     }

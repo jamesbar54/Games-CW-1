@@ -14,9 +14,6 @@ public class GolemScript : MonoBehaviour
 
     public float cooldownTime = 1.5f;
     public float cooldown = 0;
-
-    public float punchCooldownTime = 1.5f;
-    public float punchCooldown = 0;
     
     public bool punch = false;
     public float punchTime = 1;
@@ -55,12 +52,12 @@ public class GolemScript : MonoBehaviour
 
         if((player.transform.position - transform.position).sqrMagnitude < 13)
         {
-            if(punchCooldown <= 0)
+            if(cooldown <= 0)
             {
                 punch = true;
                 animator.SetBool("Punch", true);
 
-                punchCooldown = punchCooldownTime;
+                cooldown = cooldownTime;
 
                 StartCoroutine(stopPunch(punchTime));
             }
@@ -76,7 +73,6 @@ public class GolemScript : MonoBehaviour
         }
 
         cooldown -= 1 * Time.deltaTime;
-        punchCooldown -= 1* Time.deltaTime;
     }
 
 

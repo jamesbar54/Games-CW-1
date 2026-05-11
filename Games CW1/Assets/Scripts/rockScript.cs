@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class rockScript : MonoBehaviour
 {
-    private bool onRebound = false;
+    public bool onRebound = false;
+    private GameObject golem;
     private Rigidbody rigidBody;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rigidBody = gameObject.GetComponent<Rigidbody>();
+        golem = GameObject.FindGameObjectWithTag("Golem");
     }
 
     void OnCollisionEnter(Collision collision)
@@ -20,6 +22,12 @@ public class rockScript : MonoBehaviour
             pHealth.takeDamage(25);
         }
 
+        if(collision.gameObject.tag != "Player" && onRebound)
+        {
+            Debug.Log(collision.gameObject.tag);
+        }
+        
+
         HealthScript eHealth = collision.gameObject.GetComponent<HealthScript>();
 
         if(eHealth && onRebound)
@@ -27,7 +35,7 @@ public class rockScript : MonoBehaviour
             eHealth.takeDamage(60);
         }
 
-        if(collision.gameObject.tag != "Golem" && !onRebound || collision.gameObject.tag != "Player" && onRebound)
+        if((collision.gameObject.tag != "Golem" && !onRebound) || (collision.gameObject.tag != "Player" && onRebound))
         {
             Destroy(gameObject);
         }
@@ -37,7 +45,11 @@ public class rockScript : MonoBehaviour
     {
         Debug.Log("REBOUND");
 
-        rigidBody.AddForce(rigidBody.linearVelocity * -1);
+        rigidBody.linearVelocity = new Vector3(0,0,0);
+
+        rigidBody.AddForce((golem.transform.position + new Vector3(0,1.5f,0) - transform.position) * 6000);
+
+        onRebound = true;
     }
 
     // Update is called once per frame

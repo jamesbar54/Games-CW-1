@@ -38,15 +38,34 @@ public class HealthScript : MonoBehaviour
 
             Debug.Log("damage");
 
-            gameObject.GetComponent<EnemyTarget>().Stagger();
+            EnemyTarget enemyTarget = gameObject.GetComponent<EnemyTarget>();
+
+            if (enemyTarget)
+            {
+                enemyTarget.Stagger();
+            }
         }
     }
 
     private void death()
     {
-        gameObject.GetComponent<EnemyTarget>().killed();
+        EnemyTarget enemyTarget = gameObject.GetComponent<EnemyTarget>();
+
+        if (enemyTarget)
+        {
+            enemyTarget.killed();
+        }
+        else
+        {
+            killed();
+        }
 
         deathTime = Time.time + deathDelay;
+    }
+
+    private void killed()
+    {
+        
     }
 
     public float getHealth()
@@ -70,6 +89,7 @@ public class HealthScript : MonoBehaviour
             {
                 changer.checker(gameObject);
             }
+
             gameObject.transform.localScale -= new Vector3(0.001f, 0.001f, 0.001f);
         }
 

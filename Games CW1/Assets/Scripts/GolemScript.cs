@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class GolemScript : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class GolemScript : MonoBehaviour
 
     public Vector3 spawnPos = new Vector3(1, 2, 1.8f);
 
+    private bool stop = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,41 +44,64 @@ public class GolemScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("w");
-
-        if((player.transform.position - transform.position).sqrMagnitude < 100)
+        if (!stop)
         {
-            transform.rotation.SetLookRotation(player.transform.position);
-
-            transform.LookAt(player.transform);
-        }
-
-        if((player.transform.position - transform.position).sqrMagnitude < 13)
-        {
-            if(cooldown <= 0)
+            if((player.transform.position - transform.position).sqrMagnitude < 100)
             {
-                punch = true;
-                animator.SetBool("Punch", true);
+                transform.rotation.SetLookRotation(player.transform.position);
 
-                cooldown = cooldownTime;
-
-                StartCoroutine(stopPunch(punchTime));
+                transform.LookAt(player.transform);
             }
-        }
-        else if((player.transform.position - transform.position).sqrMagnitude < 100)
-        {
-            target(player.transform.position);
-            punch = false;
-        }
-        else
-        {
-            punch = false;
-        }
 
-        cooldown -= 1 * Time.deltaTime;
+            if((player.transform.position - transform.position).sqrMagnitude < 13)
+            {
+                if(cooldown <= 0)
+                {
+                    punch = true;
+                    animator.SetBool("Punch", true);
+
+                    cooldown = cooldownTime;
+
+                    StartCoroutine(stopPunch(punchTime));
+                }
+            }
+            else if((player.transform.position - transform.position).sqrMagnitude < 100)
+            {
+                target(player.transform.position);
+                punch = false;
+            }
+            else
+            {
+                punch = false;
+            }
+
+            cooldown -= 1 * Time.deltaTime;
+        }
     }
 
+    public void killed()
+    {
+        Debug.Log("killed");
 
+        animator.SetBool("killed", true);
+
+        StartCoroutine(kill());
+    }
+
+    System.Collections.IEnumerator kill()
+    {
+        Debug.Log("kill1");
+
+        stop = true;
+
+        yield return new WaitForSeconds(5);
+
+        Debug.Log("kill2");
+
+        SceneManager.LoadScene("EndGame");
+
+
+    }
 
 
     public void fistCollide()

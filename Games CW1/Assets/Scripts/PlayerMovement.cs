@@ -54,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
     private bool attackPerforming = false;
 
     public bool defending = false;
+    private bool walkPlaying;
 
     private float defendRotate = 30f;
     private RaycastHit hit;
@@ -67,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool attacking = false;
 
-
+    private AudioManager audioManager;
 
 
     public void Gravity()
@@ -83,6 +84,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+        audioManager = FindFirstObjectByType<AudioManager>();
+
         if(SceneManager.GetActiveScene().name == "Stage 1")
         {
             Debug.Log("stage 1");
@@ -100,6 +103,8 @@ public class PlayerMovement : MonoBehaviour
         upadateMouse();
 
         damage = PlayerPrefs.GetFloat("damage");
+
+
     }
 
     void Start()
@@ -158,23 +163,41 @@ public class PlayerMovement : MonoBehaviour
             Debug.DrawRay(transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 1f), transform.TransformDirection(Vector3.left), Color.red, 5);
             Debug.DrawRay(transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left), Color.red, 5);
             Debug.DrawRay(transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 0.5f), transform.TransformDirection(Vector3.left), Color.red, 5);
-        
-            if(Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left), out hit, 4) || Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 0.5f), transform.TransformDirection(Vector3.left), out hit, 4) || Physics.Raycast( transform.position + transform.rotation * new Vector3(rayCastX, rayCastY + 0.3f, rayCastZ + 1f), transform.TransformDirection(Vector3.left), out hit, 4))
+            Debug.DrawRay(transform.position + transform.rotation * new Vector3(0, rayCastY + 0.3f, 0), transform.TransformDirection(Vector3.forward), Color.red, 5);
+            
+            if(Physics.Raycast(transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ), transform.TransformDirection(Vector3.left), out hit, 5))
             {
-                HealthScript health = hit.collider.GetComponent<HealthScript>();
+                doDamage(hit);
+            }
+            if(Physics.Raycast(transform.position + transform.rotation * new Vector3(rayCastX, rayCastY, rayCastZ + 0.5f), transform.TransformDirection(Vector3.left), out hit, 5))
+            {
+                doDamage(hit);
+            }
+            if(Physics.Raycast(transform.position + transform.rotation * new Vector3(rayCastX, rayCastY + 0.3f, rayCastZ + 1f), transform.TransformDirection(Vector3.left), out hit, 5))
+            {
+                doDamage(hit);
+            }if(Physics.Raycast(transform.position + transform.rotation * new Vector3(0, rayCastY, 0), transform.TransformDirection(Vector3.forward), out hit, 1))
+            {
+                doDamage(hit);
+            }
+        }
+    }
 
-                if(health != null)
-                {
-                    health.takeDamage(damage);
-                }
+    private void doDamage(RaycastHit h)
+    {
+        HealthScript health = h.collider.GetComponent<HealthScript>();
 
-                rockScript rock = hit.collider.GetComponent<rockScript>();
+        if(health != null)
+        {
+            Debug.Log(h);
+            health.takeDamage(damage);
+        }
 
-                if (rock)
-                {
-                    rock.rebound();
-                }
-            }   
+        rockScript rock = h.collider.GetComponent<rockScript>();
+
+        if (rock)
+        {
+            rock.rebound();
         }
     }
 
@@ -210,6 +233,8 @@ public class PlayerMovement : MonoBehaviour
             // //attack = Instantiate(attackPrefab, transform);
             
             StartCoroutine(delay(0.4f));
+
+            audioManager.play("swordSwoosh");
             
         }
     }
@@ -217,6 +242,7 @@ public class PlayerMovement : MonoBehaviour
     System.Collections.IEnumerator delay(float time)
     {
         yield return new WaitForSeconds(time);
+
 
         attacking = true;
 
@@ -227,20 +253,26 @@ public class PlayerMovement : MonoBehaviour
 
     private void StopDefending()
     {
-        defending = false;
+        if (Time.timeScale == 1)
+        {
+            defending = false;
 
-        transform.Rotate(Vector3.up * -defendRotate);
+            transform.Rotate(Vector3.up * -defendRotate);
 
-        animator.SetBool("Blocking", false);
+            animator.SetBool("Blocking", false);
+        }
     }
 
     private void StartDefending()
     {
-        transform.Rotate(Vector3.up * defendRotate);
+        if (Time.timeScale == 1)
+        {
+            transform.Rotate(Vector3.up * defendRotate);
 
-        animator.SetBool("Running", false);
+            animator.SetBool("Running", false);
 
-        StartCoroutine(defendDelay(0.2f));
+            StartCoroutine(defendDelay(0.2f));
+        }
     }
 
     System.Collections.IEnumerator defendDelay(float time)
@@ -296,6 +328,22 @@ public class PlayerMovement : MonoBehaviour
     private void running()
     {
         animator.SetBool("Running", true);
+
+        if (!walkPlaying)
+        {
+            StartCoroutine(Loop(0.4f, "playerFootstep"));
+        }
+    }
+
+    System.Collections.IEnumerator Loop(float time, string name)
+    {
+        walkPlaying = true;
+
+        audioManager.play(name);
+
+        yield return new WaitForSeconds(time);
+
+        walkPlaying = false;
     }
 
     private void standing()

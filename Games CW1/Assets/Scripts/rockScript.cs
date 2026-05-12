@@ -37,6 +37,8 @@ public class rockScript : MonoBehaviour
 
         if((collision.gameObject.tag != "Golem" && !onRebound) || (collision.gameObject.tag != "Player" && onRebound))
         {
+            FindFirstObjectByType<AudioManager>().play("rockSmash");
+
             Destroy(gameObject);
         }
     }

@@ -57,15 +57,10 @@ public class HealthScript : MonoBehaviour
         }
         else
         {
-            killed();
+            gameObject.GetComponent<GolemScript>().killed();
         }
 
         deathTime = Time.time + deathDelay;
-    }
-
-    private void killed()
-    {
-        
     }
 
     public float getHealth()

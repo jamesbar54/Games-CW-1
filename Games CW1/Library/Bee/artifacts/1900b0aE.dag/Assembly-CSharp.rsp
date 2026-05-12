@@ -419,6 +419,7 @@
 "Assets/SazenGames/Skeleton/Scripts/AnimationReplayer.cs"
 "Assets/SazenGames/Skeleton/Scripts/SimpleCameraController.cs"
 "Assets/Scripts/AttackScript.cs"
+"Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/CameraMovement.cs"
 "Assets/Scripts/DamgeOverlayScript.cs"
 "Assets/Scripts/DeathMenuScript.cs"
@@ -444,6 +445,8 @@
 "Assets/Scripts/RockParticleScript.cs"
 "Assets/Scripts/rockScript.cs"
 "Assets/Scripts/SceneChangeScript.cs"
+"Assets/Scripts/sfxScript.cs"
+"Assets/Scripts/Sounds.cs"
 "Assets/Scripts/UpgradeScript.cs"
 "Assets/Scripts/VolumeChangeScript.cs"
 -langversion:9.0

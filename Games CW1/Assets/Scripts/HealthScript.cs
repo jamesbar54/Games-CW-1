@@ -17,6 +17,8 @@ public class HealthScript : MonoBehaviour
 
     private bool fade = false;
 
+    public string damageNoise = "";
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -39,6 +41,11 @@ public class HealthScript : MonoBehaviour
             Debug.Log("damage");
 
             EnemyTarget enemyTarget = gameObject.GetComponent<EnemyTarget>();
+
+            if (damageNoise != "")
+            {
+                FindAnyObjectByType<AudioManager>().play(damageNoise);
+            }
 
             if (enemyTarget)
             {
@@ -80,7 +87,7 @@ public class HealthScript : MonoBehaviour
         {
             SceneChangeScript changer = gameObject.GetComponentInParent<SceneChangeScript>();
 
-            if(changer != null)
+            if(changer)
             {
                 changer.checker(gameObject);
             }

@@ -26,9 +26,13 @@ public class EnemyTarget : MonoBehaviour
     private bool dead = false;
 
     public float stagger = 3;
+    private AudioManager audioManager;
+    private bool walkPlaying;
 
     void Awake()
     {
+        audioManager = FindFirstObjectByType<AudioManager>();
+
         agent.speed = speed;
         agent.SetDestination(targetLocation);
 
@@ -81,6 +85,7 @@ public class EnemyTarget : MonoBehaviour
 
     }
 
+
     private void death()
     {
         //Debug.Log("dead");
@@ -109,6 +114,18 @@ public class EnemyTarget : MonoBehaviour
         animator.SetBool("Running", true);
         animator.SetBool("Attacking", false);
 
+        StartCoroutine(Loop(0.3f, "skeletonFootstep"));
+    }
+    
+    System.Collections.IEnumerator Loop(float time, string name)
+    {
+        walkPlaying = true;
+
+        audioManager.play(name);
+
+        yield return new WaitForSeconds(time);
+
+        walkPlaying = false;
     }
 
     private void attack()
@@ -117,7 +134,8 @@ public class EnemyTarget : MonoBehaviour
         animator.SetBool("Attacking", true);
 
         if(damageTimer + setTime < Time.time)
-        {    
+        {   
+            audioManager.play("skeletonSwing");
 
             // Debug.Log("Attack");
 
@@ -141,6 +159,8 @@ public class EnemyTarget : MonoBehaviour
     public void Stagger()
     {
         Debug.Log("Stagger");
+
+        audioManager.stop("skeletonSwing");
 
         damageTimer = Time.time + stagger;
         animator.SetBool("Stagger", true);        

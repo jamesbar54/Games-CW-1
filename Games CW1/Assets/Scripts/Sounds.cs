@@ -2,6 +2,7 @@ using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
 using UnityEngine.Audio;
 
+//derived from https://www.youtube.com/watch?v=6OT43pvUyfY&t=441s
 [System.Serializable]
 public class Sound
 {

@@ -29,11 +29,12 @@ public class GolemScript : MonoBehaviour
     public Vector3 spawnPos = new Vector3(1, 2, 1.8f);
 
     private bool stop = false;
+    private AudioManager audioManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        audioManager = FindFirstObjectByType<AudioManager>();
     }
 
     void Awake()
@@ -139,6 +140,8 @@ public class GolemScript : MonoBehaviour
     System.Collections.IEnumerator attackSpawn(float time)
     {
         Debug.Log("Wait");
+
+        audioManager.play("rockRumble");
 
         yield return new WaitForSeconds(time);
 

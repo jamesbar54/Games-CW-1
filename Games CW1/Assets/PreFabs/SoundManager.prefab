@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5985433139947691794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7878262594697732632}
+  - component: {fileID: 1967722788620536647}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7878262594697732632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5985433139947691794}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.91066, y: 0.4124, z: 21.3446}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1967722788620536647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5985433139947691794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9d8a8a7310ee84ab3d91850e367451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  sounds:
+  - name: playerFootstep
+    clip: {fileID: 8300000, guid: 67c9dff1ed55f4043b67efa6809e12db, type: 3}
+    volume: 0.4
+    pitch: 1.15
+    loop: 0
+    source: {fileID: 0}
+  - name: swordSwoosh
+    clip: {fileID: 8300000, guid: a2f23eb9d52664f42a63699407cc1c4e, type: 3}
+    volume: 0.4
+    pitch: 1.15
+    loop: 0
+    source: {fileID: 0}
+  - name: rockSmash
+    clip: {fileID: 8300000, guid: 8107602af574eb949b11f76fa55a451e, type: 3}
+    volume: 0.4
+    pitch: 1.15
+    loop: 0
+    source: {fileID: 0}
+  - name: rockRumble
+    clip: {fileID: 8300000, guid: 237d10eb923d5054aa9dfeb3cc29c63a, type: 3}
+    volume: 0.84
+    pitch: 1.15
+    loop: 0
+    source: {fileID: 0}
+  - name: golemDamage
+    clip: {fileID: 8300000, guid: e623ad948069d2845ab4bab3c6c80d4e, type: 3}
+    volume: 0.76
+    pitch: 1.15
+    loop: 0
+    source: {fileID: 0}
+  - name: skeletonSwing
+    clip: {fileID: 8300000, guid: 28f3ded1b91ae4b40a3558e863e6f072, type: 3}
+    volume: 0.4
+    pitch: 1.15
+    loop: 0
+    source: {fileID: 0}
+  - name: skeletonFootstep
+    clip: {fileID: 8300000, guid: 3d48af4e4151e8d479c3e304349ddf58, type: 3}
+    volume: 1
+    pitch: 1.15
+    loop: 0
+    source: {fileID: 0}

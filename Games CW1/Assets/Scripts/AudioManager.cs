@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 
+//Derived from https://www.youtube.com/watch?v=6OT43pvUyfY&t=441s
 public class AudioManager : MonoBehaviour
 {
 
@@ -34,6 +35,14 @@ public class AudioManager : MonoBehaviour
 
         s.source.Play();
     }
+
+    public void stop(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+
+        s.source.Stop();
+    }
+
     // Update is called once per frame
     void Update()
     {

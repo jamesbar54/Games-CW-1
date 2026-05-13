@@ -5,16 +5,18 @@ public class PauseMenuScript : MonoBehaviour
 {
     private PlayerActions actions;
 
-    public GameObject menu;
+    public GameObject pauseMenu;
+
+    public GameObject settingsMenu;
 
     public Button Resume;
     public Button Settings;
     public Button QuitButton;
     public Button ERR;
 
-    public Mask mask;
-    private float maskMove = 3550;
-    private bool settingsActive = false;
+    // public Mask mask;
+    // private float maskMove = 3550;
+    public bool settingsActive = false;
     public Button backButton;
 
     public GameObject deathScript;
@@ -29,6 +31,7 @@ public class PauseMenuScript : MonoBehaviour
 
     void Awake()
     {
+
         actions = new PlayerActions();
         actions.Menu.MenuKey.performed += cxt => openMenu();
 
@@ -38,6 +41,10 @@ public class PauseMenuScript : MonoBehaviour
         backButton.onClick.AddListener(SettingsDeactivate);
 
         resetButtons();
+
+        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraMovement>().volumeUpdate();
+
+        //FindFirstObjectByType<AudioManager>().updateVolume();
     }
 
     private void resetButtons()
@@ -63,7 +70,7 @@ public class PauseMenuScript : MonoBehaviour
 
         settingsActive = true;
 
-        mask.rectTransform.Translate(Vector3.left * -maskMove);
+        settingsMenu.SetActive(true);
     }
 
     private void SettingsDeactivate()
@@ -75,7 +82,9 @@ public class PauseMenuScript : MonoBehaviour
 
         settingsActive = false;
 
-        mask.rectTransform.Translate(Vector3.left * maskMove);
+        settingsMenu.SetActive(false);
+
+        toggleMenu();
     }
 
     private void exitGame()
@@ -89,34 +98,26 @@ public class PauseMenuScript : MonoBehaviour
 
     private void toggleMenu()
     {
-        bool enableMenu;
+        Debug.Log("toggle");
 
-        if(menu.GetComponent<Image>().enabled == false)
+        if(!pauseMenu.activeSelf)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
-            enableMenu = true;
-
             Time.timeScale = 0;
+
+            pauseMenu.SetActive(true);
         }
         else
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
 
-            enableMenu = false;
-
             Time.timeScale = 1;
-        }     
 
-        menu.GetComponent<Image>().enabled = enableMenu;
-
-        for(int i = 0; i < menu.transform.childCount; i++)
-        {
-            menu.transform.GetChild(i).GetComponent<Button>().enabled = enableMenu;
-            menu.transform.GetChild(i).GetComponent<Text>().enabled = enableMenu;
-        }
+            pauseMenu.SetActive(false);
+        } 
         
 
         //resetButtons();

@@ -7,7 +7,7 @@ public class UpgradeScript : MonoBehaviour
     public Button health;
     public Button damage;
 
-    public Mask mask;
+    public GameObject contianer;
 
     private bool active = false;
 
@@ -37,7 +37,7 @@ public class UpgradeScript : MonoBehaviour
 
             Time.timeScale = 0;
 
-            mask.rectTransform.Translate(Vector3.right * 3550);
+            contianer.SetActive(true);
 
             active = true;
         }

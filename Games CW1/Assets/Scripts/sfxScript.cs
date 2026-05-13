@@ -19,8 +19,6 @@ public class sfxScrtipt : MonoBehaviour
     {
         PlayerPrefs.SetFloat("sfxVolume", slider.value);
 
-        GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraMovement>().volumeUpdate();
-
         FindFirstObjectByType<AudioManager>().updateVolume();
     }
 

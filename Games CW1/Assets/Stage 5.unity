@@ -6370,6 +6370,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 281752787205709203, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
+      propertyPath: nextScene
+      value: EndGame
+      objectReference: {fileID: 0}
     - target: {fileID: 667432820553533607, guid: ea3acd302be3bd9489d110b53d7676be, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

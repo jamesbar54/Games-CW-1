@@ -136,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("Grounded", true);
             }
 
-            if (groundedStore < 0.8f)
+            if (groundedStore < 0.5f)
             {
                 animator.SetBool("Grounded", false);
             }

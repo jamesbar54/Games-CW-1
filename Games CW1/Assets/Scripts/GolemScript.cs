@@ -156,4 +156,20 @@ public class GolemScript : MonoBehaviour
         rock.GetComponent<Rigidbody>().AddForce((player.transform.position + new Vector3(0, 1, 0) - rock.transform.position) * 10000);
         rock.GetComponent<Rigidbody>().AddTorque(new Vector3(10000, -10000, 0));
     }
+
+    public void damage()
+    {
+        animator.SetBool("Damage", true);
+
+        StartCoroutine(damageEnd(0.5f));
+
+        cooldown = cooldownTime * 0.7f;
+    }
+
+    System.Collections.IEnumerator damageEnd(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        animator.SetBool("Damage", false);
+    }
 }

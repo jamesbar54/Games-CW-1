@@ -32,7 +32,7 @@ public class rockScript : MonoBehaviour
 
         if(eHealth && onRebound)
         {
-            eHealth.takeDamage(60);
+            eHealth.takeDamage(60, "rock");
         }
 
         if((collision.gameObject.tag != "Golem" && !onRebound) || (collision.gameObject.tag != "Player" && onRebound))

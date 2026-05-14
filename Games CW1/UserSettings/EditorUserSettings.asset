@@ -29,6 +29,9 @@ EditorUserSettings:
     RecentlyUsedSceneGuid-7:
       value: 010403075d535c0b5b0b5f21457a094414164c2c2e2b75612c784465e4b43569
       flags: 0
+    lightmappingBakingProfile:
+      value: 51
+      flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
       flags: 0

@@ -25,7 +25,7 @@ public class HealthScript : MonoBehaviour
         
     }
 
-    public void takeDamage(float damage)
+    public void takeDamage(float damage, string type = null)
     {
         if(iFrames <= 0)
         {
@@ -50,6 +50,15 @@ public class HealthScript : MonoBehaviour
             if (enemyTarget)
             {
                 enemyTarget.Stagger();
+            }
+            else
+            {
+                GolemScript golem = gameObject.GetComponent<GolemScript>();
+
+                if (golem && type == "rock")
+                {
+                    golem.damage();
+                }
             }
         }
     }

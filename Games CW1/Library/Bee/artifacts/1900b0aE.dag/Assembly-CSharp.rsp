@@ -427,6 +427,7 @@
 "Assets/Scripts/doorTriggerScript.cs"
 "Assets/Scripts/EnablerScript.cs"
 "Assets/Scripts/EnemyTarget.cs"
+"Assets/Scripts/ExitScript.cs"
 "Assets/Scripts/GolemPunchScript.cs"
 "Assets/Scripts/GolemScript.cs"
 "Assets/Scripts/GolemThrowScript.cs"

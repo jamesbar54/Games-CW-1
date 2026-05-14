@@ -2,6 +2,13 @@
     "serializedTypes": [],
     "typesInScenes": [
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "AudioManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "BuildSettings",
             "fullManagedTypeName": "",
@@ -37,14 +44,31 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "doorScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "doorTriggerScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "EditorExtension",
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -62,14 +86,24 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ExitScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "GameManager",
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -77,6 +111,27 @@
             "nativeClass": "GlobalGameManager",
             "fullManagedTypeName": "",
             "moduleName": "Core",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "GolemPunchScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "GolemScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "GolemThrowScript",
+            "moduleName": "",
             "usedInScenes": []
         },
         {
@@ -101,14 +156,24 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "KeyScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "LevelGameManager",
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -131,9 +196,12 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -149,10 +217,20 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "particleKill",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
@@ -190,6 +268,20 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "RockParticleScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "rockScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "RuntimeInitializeOnLoadManager",
             "fullManagedTypeName": "",
@@ -200,6 +292,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "SceneChangeScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "sfxScrtipt",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -267,7 +366,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -297,9 +398,12 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -352,7 +456,8 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity"
             ]
         },
         {
@@ -363,7 +468,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -374,7 +481,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -385,7 +494,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -396,7 +507,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -407,7 +520,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -416,9 +531,12 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -429,7 +547,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -438,9 +558,12 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -451,7 +574,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -462,7 +587,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -471,9 +598,12 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -482,7 +612,8 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity"
             ]
         },
         {
@@ -491,9 +622,12 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -502,9 +636,12 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -513,9 +650,12 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -526,7 +666,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -537,7 +679,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -548,7 +692,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -557,9 +703,12 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -568,9 +717,7 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Stage 1.unity",
-                "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/EndGame.unity"
             ]
         },
         {
@@ -586,9 +733,12 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -597,9 +747,12 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -666,7 +819,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -675,9 +830,12 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -686,9 +844,12 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -699,7 +860,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -710,7 +873,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -721,7 +886,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -732,7 +899,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -741,9 +910,12 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -754,7 +926,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -763,9 +937,38 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "ParticleSystem",
+            "fullManagedTypeName": "UnityEngine.ParticleSystem",
+            "moduleName": "ParticleSystem",
+            "usedInScenes": [
+                "Assets/Stage 1.unity",
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "ParticleSystemRenderer",
+            "fullManagedTypeName": "UnityEngine.ParticleSystemRenderer",
+            "moduleName": "ParticleSystem",
+            "usedInScenes": [
+                "Assets/Stage 1.unity",
+                "Assets/Stage 2.unity",
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -781,9 +984,12 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -794,7 +1000,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -810,9 +1018,12 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -823,7 +1034,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -834,7 +1047,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -843,9 +1058,12 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -856,7 +1074,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -867,7 +1087,9 @@
             "usedInScenes": [
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -876,9 +1098,12 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -887,9 +1112,12 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -898,9 +1126,12 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {
@@ -909,9 +1140,12 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/EndGame.unity",
                 "Assets/Stage 1.unity",
                 "Assets/Stage 2.unity",
-                "Assets/Stage 3.unity"
+                "Assets/Stage 3.unity",
+                "Assets/Stage 4.unity",
+                "Assets/Stage 5.unity"
             ]
         },
         {

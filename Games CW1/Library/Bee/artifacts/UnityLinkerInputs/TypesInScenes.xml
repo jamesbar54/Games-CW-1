@@ -1,18 +1,30 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="AudioManager" preserve="nothing"/>
 		<type fullname="CameraMovement" preserve="nothing"/>
 		<type fullname="DamgeOverlayScript" preserve="nothing"/>
 		<type fullname="DeathMenuScript" preserve="nothing"/>
+		<type fullname="doorScript" preserve="nothing"/>
+		<type fullname="doorTriggerScript" preserve="nothing"/>
 		<type fullname="EnablerScript" preserve="nothing"/>
 		<type fullname="EnemyTarget" preserve="nothing"/>
+		<type fullname="ExitScript" preserve="nothing"/>
+		<type fullname="GolemPunchScript" preserve="nothing"/>
+		<type fullname="GolemScript" preserve="nothing"/>
+		<type fullname="GolemThrowScript" preserve="nothing"/>
 		<type fullname="HealScript" preserve="nothing"/>
 		<type fullname="HealthBar" preserve="nothing"/>
 		<type fullname="HealthScript" preserve="nothing"/>
+		<type fullname="KeyScript" preserve="nothing"/>
 		<type fullname="mouseSensativityScript" preserve="nothing"/>
+		<type fullname="particleKill" preserve="nothing"/>
 		<type fullname="PauseMenuScript" preserve="nothing"/>
 		<type fullname="PlayerHealth" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
+		<type fullname="RockParticleScript" preserve="nothing"/>
+		<type fullname="rockScript" preserve="nothing"/>
 		<type fullname="SceneChangeScript" preserve="nothing"/>
+		<type fullname="sfxScrtipt" preserve="nothing"/>
 		<type fullname="UpgradeScript" preserve="nothing"/>
 		<type fullname="VolumeChangeScript" preserve="nothing"/>
 	</assembly>
@@ -80,6 +92,8 @@
 		<type fullname="UnityEngine.MonoBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Motion" preserve="nothing"/>
 		<type fullname="UnityEngine.Object" preserve="nothing"/>
+		<type fullname="UnityEngine.ParticleSystem" preserve="nothing"/>
+		<type fullname="UnityEngine.ParticleSystemRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.QualitySettings" preserve="nothing"/>
 		<type fullname="UnityEngine.RectTransform" preserve="nothing"/>
 		<type fullname="UnityEngine.Renderer" preserve="nothing"/>
